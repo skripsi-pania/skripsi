@@ -80,7 +80,7 @@ a:hover::before {
 }
 
 #loginbutton {
-  margin-left: 24px;
+  margin-left: 50px;
   margin-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
@@ -309,7 +309,8 @@ a:hover::before {
     margin-left: 0;
   }
   #registerbutton {
-    margin-left: 8px;
+    margin-left: 30px;
+    margin-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
     color: #0b0b0b;
