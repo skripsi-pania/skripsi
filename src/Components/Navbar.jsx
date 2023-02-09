@@ -68,15 +68,15 @@ function Navbar() {
               </li>
             </ul>
             <ul class="navbar-nav col-6 lore ">
-              <li class="nav-item loredet col">
-                <a class="nav-link " href="#">
+              <li class="nav-item loredet">
+                <button class="nav-link btn" id="loginbutton" href="#">
                   Login
-                </a>
+                </button>
               </li>
-              <li class="nav-item loredet col">
-                <a class="nav-link" href="#">
+              <li class="nav-item loredet">
+                <button class="nav-link" id="registerbutton" href="#">
                   Register
-                </a>
+                </button>
               </li>
             </ul>
           </div>
