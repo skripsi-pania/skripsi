@@ -25,7 +25,7 @@ function Navbar() {
             class="collapse navbar-collapse text-center navutama"
             id="navbarNav"
           >
-            <ul class="navbar-nav col">
+            <ul class="navbar-nav col navsatu">
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   About

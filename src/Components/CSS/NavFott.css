@@ -13,6 +13,11 @@
   width: 100%;
 }
 
+.navsatu {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .dropdown-menu a:hover {
   color: rgb(255, 165, 180);
   background-color: rgb(244, 244, 244);
@@ -182,10 +187,10 @@ a:hover::before {
   transition: 0.3s 0.1s;
   z-index: 2;
 }
-.btn-0:active {
+/* .btn-0:active {
   transform: translateX(100px);
   background: rgba(255, 255, 255, 0.5);
-}
+} */
 .btn-0 {
   position: relative;
   color: black;
@@ -199,9 +204,9 @@ a:hover::before {
   font-weight: 500;
   border-radius: var(--border-r);
   border: ridge;
-
   /* -webkit-text-stroke: 0.5px rgb(255, 255, 255); */
 }
+
 .btn-0:before,
 .btn-0:after {
   content: "";
