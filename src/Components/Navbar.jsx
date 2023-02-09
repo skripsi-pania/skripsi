@@ -7,7 +7,7 @@ function Navbar() {
         <div class="container-fluid">
           <p class="navbar-brand iconimg" href="#">
             {/* <center> */}
-            <img src="adibaicon.gif" /> {/* </center> */}
+            <img src="adibanew1.gif" /> {/* </center> */}
           </p>
           <button
             class="navbar-toggler togglee"
@@ -66,6 +66,11 @@ function Navbar() {
                   {/* </Link> */}
                 </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Review
+                </a>
+              </li>
             </ul>
             <ul class="navbar-nav col-6 lore ">
               <li class="nav-item loredet">
@@ -73,9 +78,13 @@ function Navbar() {
                   Login
                 </button>
               </li>
-              <li class="nav-item loredet">
-                <button class="nav-link" id="registerbutton" href="#">
-                  Register
+              <li class="nav-item">
+                <button
+                  class="nav-link btn-0 btn-3"
+                  id="registerbutton"
+                  href="#"
+                >
+                  Register &rarr;
                 </button>
               </li>
             </ul>

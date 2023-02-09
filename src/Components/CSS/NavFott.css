@@ -1,12 +1,12 @@
-nav {
+/* nav {
   border: ridge;
-}
+} */
 
 .iconimg img {
-  width: 30%;
+  width: 70%;
   /* border: ridge; */
-  margin-bottom: -30px;
-  margin-top: -20px;
+  margin-bottom: -10px;
+  margin-top: -5px;
 }
 
 .togglee {
@@ -33,7 +33,7 @@ nav {
 }
 
 a {
-  background-image: linear-gradient(to right, #ff7eb8, #54b3d6 50%, #000 90%);
+  background-image: linear-gradient(to right, #ff7eb8, #af7509 50%, #000 70%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -80,12 +80,28 @@ a:hover::before {
   padding-left: 20px;
   padding-right: 20px;
   /* background-color: rgb(255, 192, 192); */
-  color: white;
+  /* color: white; */
   /* -webkit-text-stroke: 0.6px rgb(255, 255, 255); */
   font-size: 15px;
-  font-weight: 300;
-  /* border-radius: 12px; */
+  color: white;
+  font-weight: 500;
+  border-radius: 12px;
+  /* -webkit-text-stroke: 0.5px rgb(255, 255, 255); */
 }
+
+#registerbutton {
+  margin-left: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #0b0b0b;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  /* background-color: rgb(255, 255, 255); */
+  /* -webkit-text-stroke: 0.5px rgb(0, 0, 0); */
+}
+
+/* -----------button login ------------------------- */
 
 @import url(https://use.typekit.net/ztx1wfr.css);
 :root {
@@ -115,14 +131,14 @@ a:hover::before {
       #ff7289 85%
     )
     no-repeat -1px 50%/300% calc(100% + 2px);
-  color: white;
+  /* color: rgb(0, 0, 0); */
   transition: color 0.3s, background 0.3s, transform 0.75s,
     background-position 0.5s, box-shadow 0.5s;
   will-change: background-position, transform, box-shadow;
   position: relative;
   border-radius: var(--border-r);
   /* border: var(--border-w) solid #d8386b; */
-  -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+  /* -webkit-text-stroke: 0.5px rgb(255, 255, 255); */
 }
 .btn:before,
 .btn:after {
@@ -133,8 +149,9 @@ a:hover::before {
 }
 .btn:before {
   inset: calc(var(--border-w) * -1);
-  box-shadow: inset 0.0333em 0.0333em 0.2em #ca78e5,
-    inset -0.0666em -0.0666em 0.15em #311879, inset 0.025em 0.025em 0.1em white;
+  box-shadow: inset 0.0333em 0.0333em 0.2em #ffffff,
+    inset -0.0666em -0.0666em 0.15em #000000,
+    inset 0.025em 0.025em 0.1em rgb(255, 255, 255);
   mix-blend-mode: hard-light;
 }
 .btn:after {
@@ -155,103 +172,123 @@ a:hover::before {
     inset 0 0 0.05em 0.0333em rgba(231, 212, 67, 0.25),
     inset 0 0.1em 0.666em rgba(216, 160, 56, 0.333);
 }
-.btn--outline {
-  color: #221155;
+
+/* ---------------------- button register ------------------------ */
+
+.btn-0 {
+  border: 2px solid black;
+  animation: 0.5s collision ease-in;
+  overflow: hidden;
+  transition: 0.3s 0.1s;
+  z-index: 2;
+}
+.btn-0:active {
+  transform: translateX(100px);
+  background: rgba(255, 255, 255, 0.5);
+}
+.btn-0 {
+  position: relative;
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+  z-index: 5;
+  transition: 1s ease-in-out;
+}
+.btn-0:hover {
+  color: #ffffff !important;
+  font-weight: 500;
+  border-radius: var(--border-r);
+  border: ridge;
+
+  /* -webkit-text-stroke: 0.5px rgb(255, 255, 255); */
+}
+.btn-0:before,
+.btn-0:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
   background: linear-gradient(
       var(--angle),
-      rgba(97, 56, 216, 0) 33.3%,
-      #6138d8 66.6%,
-      #6138d8 85%,
-      rgba(177, 67, 231, 0.9)
+      #ff7289 25%,
+      rgba(255, 227, 236, 0.9) 40%,
+      rgba(255, 177, 193, 0.95) 65%,
+      #ff7289 85%
     )
     no-repeat -1px 50%/300% calc(100% + 2px);
+  box-shadow: 0 0.15em 1.5em rgba(231, 152, 67, 0.666),
+    0 0.15em 0.333em -0.1em rgba(218, 139, 28, 0.666),
+    inset 0 0.15em 0.3em -0.1em rgba(177, 67, 231, 0),
+    inset 0 0 0.05em 0.0333em rgba(231, 212, 67, 0.25),
+    inset 0 0.1em 0.666em rgba(216, 160, 56, 0.333);
+  color: white !important;
+  z-index: -1;
 }
-.btn--outline:after {
-  content: "";
+.btn-0:hover:before {
+  animation: collisionLeft 1s both;
+  animation-direction: alternate;
 }
-.btn--outline:hover,
-.btn--outline:focus {
-  color: white;
+.btn-0:hover:after {
+  animation: collisionRight 1s both;
+  animation-direction: alternate;
 }
-.btn--outline:hover:after,
-.btn--outline:focus:after {
-  opacity: 0;
+.btn-0:before {
+  left: -30%;
 }
-
-.card {
-  grid-area: 1/2/3;
-  font-size: 0.8em;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #6138d8;
-  text-decoration: none;
-  letter-spacing: 0.05em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border-radius: var(--border-r);
-  border: var(--border-w) solid #6138d8;
-  border-color: rgba(109, 80, 192, 0.1);
-  box-shadow: 0 0.1em 2.25em -0.5em rgba(224, 32, 240, 0),
-    0 0.333em 0.5em -0.25em rgba(224, 32, 240, 0);
-  transition: 0.5s;
-  transition-property: border-color, background, box-shadow, color;
+.btn-0:after {
+  left: 125%;
 }
-.card:before,
-.card:after {
-  content: "";
-  border-radius: inherit;
-  position: absolute;
-  transition: opacity 0.5s, filter 0.5s;
+@keyframes collisionLeft {
+  0% {
+    left: -30%;
+    width: 20px;
+    height: 20px;
+  }
+  50% {
+    left: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  100% {
+    left: 50%;
+    width: 300px;
+    height: 300px;
+  }
 }
-.card:before {
-  inset: calc(var(--border-w) * -1);
-  box-shadow: inset 0.0333em 0.0333em 0.2em #ca78e5,
-    inset -0.0666em -0.0666em 0.15em #311879, inset 0.025em 0.025em 0.1em white;
-  mix-blend-mode: hard-light;
-}
-.card:after {
-  inset: 0;
-  border-radius: calc(var(--border-r) - var(--border-w));
-  box-shadow: -0.05em -0.05em 0.05em #311879, 0.05em 0.05em 0.05em #ca78e5;
-  mix-blend-mode: hard-light;
-}
-.card:before,
-.card:after {
-  opacity: 0.25;
-  filter: saturate(0) invert(1);
-}
-.card:hover,
-.card:focus {
-  color: #391c8e;
-  border-color: #6138d8;
-  background: rgba(224, 32, 240, 0.5);
-  box-shadow: 0 0.1em 2.25em -0.5em #e020f0,
-    0 0.25em 0.25em -0.15em rgba(224, 32, 240, 0.333);
-}
-.card:hover:before,
-.card:hover:after,
-.card:focus:before,
-.card:focus:after {
-  opacity: 1;
-  filter: saturate(1) invert(0);
+@keyframes collisionRight {
+  0% {
+    left: 125%;
+    width: 20px;
+    height: 20px;
+  }
+  50% {
+    left: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  100% {
+    left: 50%;
+    width: 300px;
+    height: 300px;
+  }
 }
 
-#registerbutton {
-  margin-left: 13px;
-  margin-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: rgb(255, 255, 255);
+.btn-3 {
+  filter: url("#goo");
+  border: none;
+  background: transparent;
 }
 
 @media screen and (max-width: 800px) {
   .iconimg img {
     width: 90%;
-    margin-left: 8px;
+    margin-left: -5px;
     margin-bottom: 4px;
-    margin-top: 0px;
+    margin-top: 5px;
   }
   .iconimg {
     margin-left: 15vw;
@@ -265,5 +302,16 @@ a:hover::before {
   .loredet {
     text-align: center;
     margin-left: 0;
+  }
+  #registerbutton {
+    margin-left: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #0b0b0b;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 12px;
+    /* background-color: rgb(255, 255, 255); */
+    /* -webkit-text-stroke: 0.5px rgb(0, 0, 0); */
   }
 }
