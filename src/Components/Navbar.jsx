@@ -72,21 +72,25 @@ function Navbar() {
                 </a>
               </li>
             </ul>
-            <ul class="navbar-nav col-6 lore ">
-              <li class="nav-item loredet">
-                <button class="nav-link btn" id="loginbutton" href="#">
-                  Login
-                </button>
-              </li>
-              <li class="nav-item">
-                <button
-                  class="nav-link btn-0 btn-3"
-                  id="registerbutton"
-                  href="#"
-                >
-                  Register &rarr;
-                </button>
-              </li>
+            <ul class="navbar-nav col-6 lore navdua">
+              <center>
+                <li class="nav-item loredet loginbutton0">
+                  <button class="nav-link btn" id="loginbutton" href="#">
+                    Login
+                  </button>
+                </li>
+              </center>
+              <center>
+                <li class="nav-item">
+                  <button
+                    class="nav-link btn-0 btn-3"
+                    id="registerbutton"
+                    href="#"
+                  >
+                    Register &rarr;
+                  </button>
+                </li>
+              </center>
             </ul>
           </div>
         </div>

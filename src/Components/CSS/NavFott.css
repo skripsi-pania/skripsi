@@ -80,8 +80,9 @@ a:hover::before {
 }
 
 #loginbutton {
-  margin-left: 50px;
-  margin-bottom: 5px;
+  /* margin-left: 45vw; */
+  /* align-items: center; */
+  /* margin-bottom: 5px; */
   padding-left: 20px;
   padding-right: 20px;
   /* background-color: rgb(255, 192, 192); */
@@ -308,8 +309,20 @@ a:hover::before {
     text-align: center;
     margin-left: 0;
   }
+  .navdua {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loginbutton0 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   #registerbutton {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     margin-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
