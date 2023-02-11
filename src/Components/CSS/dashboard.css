@@ -1,13 +1,15 @@
 /* ----------cover---------------- */
 .coverku {
   width: 558px;
-  height: 600px;
+  height: 650px;
+  border: ridge;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .coverku {
-    width: 285px;
-    height: 300px;
-    margin-left: 10vw;
+    width: 355px;
+    height: 450px;
+    margin-left: 2.5vw;
+    border: ridge;
   }
 }
