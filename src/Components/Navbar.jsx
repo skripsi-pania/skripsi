@@ -7,7 +7,7 @@ function Navbar() {
         <div class="container-fluid">
           <p class="navbar-brand iconimg" href="#">
             {/* <center> */}
-            <img src="rins1.gif" /> {/* </center> */}
+            <img src="rins2.gif" /> {/* </center> */}
           </p>
           <button
             class="navbar-toggler togglee"
@@ -21,18 +21,15 @@ function Navbar() {
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div
-            class="collapse navbar-collapse text-center navutama"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav col navsatu">
+          <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav col navsatu navawall">
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   About
                 </a>
               </li>
               {/* <!-- DROPDOWN-------------------- --> */}
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown navawall">
                 <a
                   className="nav-link dropdown-toggle navmenu dropbtn"
                   id="menuu"
@@ -42,12 +39,14 @@ function Navbar() {
                   Category
                 </a>
 
-                <ul className="dropdown-menu mt-1" id="navdd">
+                <div className="dropdown-menu mt-1" id="navdd">
                   {/* <Link to={"/dampak"} style={{ textDecoration: "none" }}> */}
                   <center>
-                    <li className="abc">
-                      <p className="dropdown-item abc">Party</p>
-                    </li>
+                    <a>
+                      <li className="abc partyy">
+                        <p className="abc">Party</p>
+                      </li>
+                    </a>
                     {/* </Link> */}
                     <hr></hr>
                     {/* <li className="abc"><a className="dropdown-item abc" href="#">Informasi Pencegahan<br></br>Bencana</a></li><hr></hr> */}
@@ -68,24 +67,24 @@ function Navbar() {
                     </li>
                   </center>
                   {/* </Link> */}
-                </ul>
+                </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li class="nav-item navawall">
+                <a class="nav-link " href="#">
                   Review
                 </a>
               </li>
             </ul>
             <ul class="navbar-nav col-6 lore navdua">
               <center>
-                <li class="nav-item loredet loginbutton0">
+                <div class="nav-item loredet loginbutton0">
                   <button class="nav-link btn" id="loginbutton" href="#">
                     Login
                   </button>
-                </li>
+                </div>
               </center>
               <center>
-                <li class="nav-item">
+                <div class="nav-item">
                   <button
                     class="nav-link btn-0 btn-3"
                     id="registerbutton"
@@ -93,7 +92,7 @@ function Navbar() {
                   >
                     Register &rarr;
                   </button>
-                </li>
+                </div>
               </center>
             </ul>
           </div>
