@@ -1,0 +1,13 @@
+/* ----------cover---------------- */
+.coverku {
+  width: 558px;
+  height: 600px;
+}
+
+@media screen and (max-width: 800px) {
+  .coverku {
+    width: 285px;
+    height: 300px;
+    margin-left: 10vw;
+  }
+}
