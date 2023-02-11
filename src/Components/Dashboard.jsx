@@ -13,18 +13,19 @@ function Dashboard() {
         >
           <i
             className="fa fa-whatsapp"
-            // style={{ fontSize: "35px", color: "green" }}
+            style={{ fontSize: "42px", color: "green" }}
+            title="Whatsapp"
           ></i>
         </a>
-
         <a
           href="https://www.instagram.com/rinsmakeup/"
-          className="instagram_float"
+          className=" instagram_float"
           target="_blank"
         >
           <i
             className="fa fa-instagram"
-            // style={{ fontSize: "48px", color: "white", zIndex: "2" }}
+            title="Instagram"
+            style={{ fontSize: "48px", color: "white", zIndex: "2" }}
           ></i>
         </a>
       </div>

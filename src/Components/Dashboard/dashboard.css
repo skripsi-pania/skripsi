@@ -135,7 +135,23 @@ h2 {
     font-size: 22px;
   }
 
+  .instagram_float {
+    width: 55px;
+    height: 55px;
+    bottom: 75px;
+    right: 10px;
+    font-size: 22px;
+  }
+
   .instagram_icon {
+    width: 55px;
+    height: 55px;
+    bottom: 75px;
+    right: 10px;
+    font-size: 22px;
+  }
+
+  /* .instagram_icon {
     line-height: 40px;
 
     width: 55px;
@@ -143,5 +159,5 @@ h2 {
     bottom: 70px;
     right: 8px;
     font-size: 22px;
-  }
+  } */
 }
