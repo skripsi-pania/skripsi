@@ -82,7 +82,7 @@ h2 {
 
 .bodyCover {
   text-align: center;
-  padding-top: 15vw;
+  padding-top: 20vw;
 }
 .intro {
   margin-top: -100px;
@@ -97,6 +97,33 @@ h2 {
   left: 100px;
   top: 15px;
   z-index: -1;
+}
+
+/* --------- Find ---------- */
+
+.findd {
+  width: 1100px;
+  height: 350px;
+  margin-left: 6vw;
+  margin-bottom: 5vw;
+  border-radius: 24px;
+  background-image: url("/makeup/findbefore.jpg");
+  background-size: 1100px 350px;
+}
+
+.findd:hover {
+  width: 1100px;
+  height: 350px;
+  margin-left: 6vw;
+  margin-bottom: 5vw;
+  border-radius: 24px;
+  background-image: url("/makeup/findafter.jpg");
+  background-size: 1100px 350px;
+}
+
+.text-find {
+  margin-left: 40px;
+  padding-top: 150px;
 }
 
 @media screen and (max-width: 800px) {
@@ -151,13 +178,36 @@ h2 {
     font-size: 22px;
   }
 
-  /* .instagram_icon {
-    line-height: 40px;
+  .findd {
+    width: 400px;
+    height: 150px;
+    margin-left: 0.25vw;
+    margin-right: 0.5vw;
+    margin-bottom: 5vw;
+    border-radius: 24px;
+    background-image: url("/makeup/findbefore.jpg");
+    background-size: 400px 150px;
+  }
 
-    width: 55px;
-    height: 55px;
-    bottom: 70px;
-    right: 8px;
-    font-size: 22px;
-  } */
+  .findd:hover {
+    width: 400px;
+    height: 150px;
+    margin-left: 0.25vw;
+    margin-right: 0.5vw;
+    margin-bottom: 5vw;
+    border-radius: 24px;
+    background-image: url("/makeup/findafter.jpg");
+    background-size: 400px 150px;
+  }
+
+  .text-find {
+    margin-left: 22px;
+    padding-top: 40px;
+    font-size: 12px;
+    overflow: hidden;
+    width: 225px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
 }

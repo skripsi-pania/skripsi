@@ -1,6 +1,13 @@
 /* nav {
   border: ridge;
 } */
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Playfair Display";
+}
 
 .iconimg img {
   width: 35vw;

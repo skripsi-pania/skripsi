@@ -28,6 +28,16 @@ function Cover() {
           </div>
         </div>
       </div>
+      <div>
+        <h2 class="text-center" style={{ margin: "10vw" }}>
+          Browse & Discover
+        </h2>
+      </div>
+      <div class=" findd">
+        <div class="text-find">
+          <h3>Find your makeup needs right now</h3>
+        </div>
+      </div>
     </>
   );
 }
