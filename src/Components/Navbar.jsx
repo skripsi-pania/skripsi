@@ -7,7 +7,7 @@ function Navbar() {
         <div class="container-fluid">
           <p class="navbar-brand iconimg" href="#">
             {/* <center> */}
-            <img src="rins.gif" /> {/* </center> */}
+            <img src="rins1.gif" /> {/* </center> */}
           </p>
           <button
             class="navbar-toggler togglee"

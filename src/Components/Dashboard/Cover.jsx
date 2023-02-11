@@ -9,12 +9,16 @@ function Cover() {
           <div className="col bodyCover">
             <h2 className="col intro">
               Welcome to &nbsp;
-              {/* <span className="introone" style={{}}>
+              <a
+                className="introone"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 RinsMakeup !
-              </span> */}
-              <img src="/rins1.png" className="col rins0" />
+              </a>
+              {/* <img src="/rins1.png" className="col rins0" /> */}
             </h2>
           </div>
+
           <div className="col">
             <img
               src="makeup/cover2.png"
