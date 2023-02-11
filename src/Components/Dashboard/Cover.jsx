@@ -7,11 +7,12 @@ function Cover() {
       <div>
         <div className="row">
           <div className="col bodyCover">
-            <h2 className="intro">
+            <h2 className="col intro">
               Welcome to &nbsp;
-              <span className="introone" style={{}}>
+              {/* <span className="introone" style={{}}>
                 RinsMakeup !
-              </span>
+              </span> */}
+              <img src="/rins1.png" className="col rins0" />
             </h2>
           </div>
           <div className="col">
