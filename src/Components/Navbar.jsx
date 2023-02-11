@@ -64,7 +64,7 @@ function Navbar() {
                     {/* <li className="abc"><a className="dropdown-item abc" href="#">Artikel Informasi</a></li><hr></hr> */}
                     {/* <Link to={"/forum"} style={{ textDecoration: "none" }}> */}
                     <li className="abc">
-                      <p className="dropdown-item abc">Wedding</p>
+                      <p className="dropdown-item abc">Wedding </p>
                     </li>
                   </center>
                   {/* </Link> */}
