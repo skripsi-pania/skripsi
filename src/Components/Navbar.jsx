@@ -7,7 +7,7 @@ function Navbar() {
         <div class="container-fluid">
           <p class="navbar-brand iconimg" href="#">
             {/* <center> */}
-            <img src="adibanew1.gif" /> {/* </center> */}
+            <img src="rins.gif" /> {/* </center> */}
           </p>
           <button
             class="navbar-toggler togglee"
@@ -54,6 +54,10 @@ function Navbar() {
                     {/* <Link to={"/pencegahan"} style={{ textDecoration: "none" }}> */}
                     <li className="abc">
                       <p className="dropdown-item abc">Graduation</p>
+                    </li>
+                    <hr></hr>
+                    <li className="abc">
+                      <p className="dropdown-item abc">Engagement</p>
                     </li>
                     {/* </Link> */}
                     <hr></hr>
