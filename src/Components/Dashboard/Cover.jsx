@@ -21,7 +21,7 @@ function Cover() {
 
           <div className="col">
             <img
-              src="makeup/cover2.png"
+              src="makeup/cover3.png"
               className="coverku"
               style={{ borderRadius: "30vw" }}
             />
