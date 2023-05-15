@@ -1,8 +1,9 @@
 .cardGrid {
   position: relative;
   padding: 10px;
-  background-image: url("/makeup/wedding2rem.jpg");
-  background-size: 380px 420px;
+  background-image: url("/makeup/wedding4rem.jpg");
+  background-size: 350px 420px;
+  margin-left: -100px;
   background-repeat: no-repeat;
   /* border: ridge; */
   border-radius: 20px;
