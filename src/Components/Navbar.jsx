@@ -48,7 +48,7 @@ function Navbar() {
                       </li>
                     </a> */}
               {/* </Link> */}
-              {/* <hr></hr> */}
+              {/* <hr></hr>g */}
               {/* <li className="abc"><a className="dropdown-item abc" href="#">Informasi Pencegahan<br></br>Bencana</a></li><hr></hr> */}
               {/* <Link to={"/pencegahan"} style={{ textDecoration: "none" }}> */}
               {/* <li className="abc">

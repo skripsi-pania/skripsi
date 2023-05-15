@@ -23,7 +23,7 @@ function Cover() {
             <img
               src="makeup/cover3.png"
               className="coverku"
-              style={{ borderRadius: "30vw" }}
+              style={{ borderRadius: "1vw" }}
             />
           </div>
         </div>

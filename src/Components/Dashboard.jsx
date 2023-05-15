@@ -1,10 +1,12 @@
 import React from "react";
 import Cover from "./Dashboard/Cover";
+import GridMakeup from "./Dashboard/GridMakeup";
 
 function Dashboard() {
   return (
     <div>
       <Cover />
+      <GridMakeup />
       <div>
         <a
           href="https://api.whatsapp.com/send?phone=%2B6287776474959&text=Halo Kak saya boleh minta Price Listnya ?"

@@ -107,8 +107,11 @@ h2 {
   margin-left: 6vw;
   margin-bottom: 5vw;
   border-radius: 24px;
-  background-image: url("/makeup/findbefore.jpg");
+  background-image: url("/makeup/findafter.jpg");
   background-size: 1100px 350px;
+  filter: brightness(80%);
+
+  /* opacity: 0.6; */
 }
 
 .findd:hover {
@@ -117,7 +120,9 @@ h2 {
   margin-left: 6vw;
   margin-bottom: 5vw;
   border-radius: 24px;
-  background-image: url("/makeup/findafter.jpg");
+  /* background-image: url("/makeup/findafter.jpg"); */
+  filter: brightness(100%);
+
   background-size: 1100px 350px;
 }
 
@@ -210,4 +215,9 @@ h2 {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
+}
+
+.wadahGrid {
+  background-color: pink;
+  border-radius: 25px;
 }
