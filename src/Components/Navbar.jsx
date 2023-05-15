@@ -30,7 +30,7 @@ function Navbar() {
               </li>
               {/* <!-- DROPDOWN-------------------- --> */}
               {/* <li className="nav-item dropdown navawall"> */}
-                {/* <a
+              {/* <a
                   className="nav-link dropdown-toggle navmenu dropbtn"
                   id="menuu"
                   role="button"
@@ -39,35 +39,35 @@ function Navbar() {
                   Category
                 </a> */}
 
-                {/* <div className="dropdown-menu mt-1" id="navdd"> */}
-                  {/* <Link to={"/dampak"} style={{ textDecoration: "none" }}> */}
-                  {/* <center> */}
-                    {/* <a>
+              {/* <div className="dropdown-menu mt-1" id="navdd"> */}
+              {/* <Link to={"/dampak"} style={{ textDecoration: "none" }}> */}
+              {/* <center> */}
+              {/* <a>
                       <li className="abc">
                         <p className="dropdown-item abc">Party</p>
                       </li>
                     </a> */}
-                    {/* </Link> */}
-                    <hr></hr>
-                    {/* <li className="abc"><a className="dropdown-item abc" href="#">Informasi Pencegahan<br></br>Bencana</a></li><hr></hr> */}
-                    {/* <Link to={"/pencegahan"} style={{ textDecoration: "none" }}> */}
-                    {/* <li className="abc">
+              {/* </Link> */}
+              {/* <hr></hr> */}
+              {/* <li className="abc"><a className="dropdown-item abc" href="#">Informasi Pencegahan<br></br>Bencana</a></li><hr></hr> */}
+              {/* <Link to={"/pencegahan"} style={{ textDecoration: "none" }}> */}
+              {/* <li className="abc">
                       <p className="dropdown-item abc">Graduation</p>
                     </li> */}
-                    <hr></hr>
-                    {/* <li className="abc">
+              {/* <hr></hr> */}
+              {/* <li className="abc">
                       <p className="dropdown-item abc">Engagement</p>
                     </li> */}
-                    {/* </Link> */}
-                    <hr></hr>
-                    {/* <li className="abc"><a className="dropdown-item abc" href="#">Artikel Informasi</a></li><hr></hr> */}
-                    {/* <Link to={"/forum"} style={{ textDecoration: "none" }}> */}
-                    {/* <li className="abc">
+              {/* </Link> */}
+              {/* <hr></hr> */}
+              {/* <li className="abc"><a className="dropdown-item abc" href="#">Artikel Informasi</a></li><hr></hr> */}
+              {/* <Link to={"/forum"} style={{ textDecoration: "none" }}> */}
+              {/* <li className="abc">
                       <p className="dropdown-item abc">Wedding </p>
                     </li> */}
-                  {/* </center> */}
-                  {/* </Link> */}
-                {/* </div> */}
+              {/* </center> */}
+              {/* </Link> */}
+              {/* </div> */}
               {/* </li> */}
               <li class="nav-item navawall">
                 <a class="nav-link " href="#">
