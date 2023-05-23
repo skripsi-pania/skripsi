@@ -1,15 +1,15 @@
 import "./App.css";
-import Navbar from "./Components/Navbar";
 import Dashboard from "./Components/Dashboard";
 import "./Components/CSS/NavFott.css";
-import Footer from "./Components/Footer";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Dashboard />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        {/* <Route path="/wedding" element={}/>  */}
+      </Routes>
     </div>
   );
 }

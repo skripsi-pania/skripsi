@@ -28,7 +28,7 @@ function Cover() {
         </div>
       </div>
       <div>
-        <h2 class="text-center" style={{ margin: "10vw" }}>
+        <h2 class="text-center" style={{ margin: "6vw" }}>
           Browse & Discover
         </h2>
       </div>
