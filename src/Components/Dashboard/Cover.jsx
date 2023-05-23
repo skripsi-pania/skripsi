@@ -5,7 +5,7 @@ function Cover() {
   return (
     <>
       <div>
-        <div className="row">
+        <div className="container-fluid row">
           <div className="col bodyCover">
             <h2 className="col intro">
               Welcome to &nbsp;
@@ -15,7 +15,6 @@ function Cover() {
               >
                 RinsMakeup !
               </li>
-              {/* <img src="/rins1.png" className="col rins0" /> */}
             </h2>
           </div>
 

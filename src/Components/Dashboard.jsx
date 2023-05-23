@@ -25,6 +25,7 @@ function Dashboard() {
           href="https://www.instagram.com/rinsmakeup/"
           className=" instagram_icon"
           target="_blank"
+          style={{ zIndex: "15" }}
         >
           <i
             className="fa fa-instagram"
