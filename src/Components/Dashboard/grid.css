@@ -28,6 +28,24 @@
   transition: all 500ms ease-in-out;
   margin: 0 auto;
 }
+
+/* aneeeeeeeeeeeeeeeeeeh */
+.cardGridWed:hover {
+  background: rgba(2, 0, 0, 0.65) url("/makeup/wedding4rem.jpg");
+  background-size: 350px 420px;
+  background-blend-mode: darken;
+}
+.cardGridEng:hover {
+  background: rgba(2, 0, 0, 0.65) url("/makeup/engagement0.jpg");
+  background-size: 370px 380px;
+  background-blend-mode: darken;
+}
+.cardGridGrad:hover {
+  background: rgba(2, 0, 0, 0.65) url("/makeup/grad0rem.jpg");
+  background-size: 350px 380px;
+  background-blend-mode: darken;
+}
+
 .cardGridGrad {
   position: relative;
   padding: 10px;

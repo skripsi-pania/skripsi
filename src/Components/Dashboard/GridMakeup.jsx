@@ -20,12 +20,14 @@ function GridMakeup() {
         class="row align-items-center container"
         style={{ margin: "0 auto" }}
       >
-        <div class="col-4 cardGrid ">
-          <div className="catGrid ">
-            <p>Wedding</p>
-            <center>
-              <button> Click me!</button>
-            </center>
+        <div class="col-4 cardGrid cardGridWed">
+          <div class="basewed2">
+            <div className="catGrid cardGridWed2">
+              <p class="test">Wedding</p>
+              <center>
+                <button class="test"> Click me!</button>
+              </center>
+            </div>
           </div>
         </div>
         <div class="col-4 cardGrid cardGridEng">
