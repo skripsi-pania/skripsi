@@ -95,7 +95,7 @@ function Navbar() {
                     id="registerbutton"
                     href="#"
                   >
-                    Review &rarr;
+                    Private Class &rarr;
                   </button>
                 </div>
               </center>

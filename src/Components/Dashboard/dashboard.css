@@ -104,7 +104,7 @@ h2 {
 .findd {
   width: 1100px;
   height: 350px;
-  margin-left: 6vw;
+  margin-left: 9vw;
   margin-bottom: 5vw;
   border-radius: 24px;
   background-image: url("/makeup/findafter.jpg");
@@ -115,9 +115,6 @@ h2 {
 }
 
 .findd:hover {
-  width: 1100px;
-  height: 350px;
-  margin-left: 6vw;
   margin-bottom: 5vw;
   border-radius: 24px;
   /* background-image: url("/makeup/findafter.jpg"); */
@@ -183,10 +180,11 @@ h2 {
     font-size: 22px;
   }
 
+  /* ini find untuk hp */
   .findd {
     width: 400px;
     height: 150px;
-    margin-left: 0.25vw;
+    /* margin-left: 0.25vw; */
     margin-right: 0.5vw;
     margin-bottom: 5vw;
     border-radius: 24px;
@@ -197,7 +195,7 @@ h2 {
   .findd:hover {
     width: 400px;
     height: 150px;
-    margin-left: 0.25vw;
+    /* margin-left: 0.25vw; */
     margin-right: 0.5vw;
     margin-bottom: 5vw;
     border-radius: 24px;

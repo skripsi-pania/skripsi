@@ -1,12 +1,14 @@
 import React from "react";
 import Cover from "./Dashboard/Cover";
 import GridMakeup from "./Dashboard/GridMakeup";
+import OurGallery from "./Dashboard/OurGallery";
 
 function Dashboard() {
   return (
     <div>
       <Cover />
       <GridMakeup />
+      <OurGallery />
       <div>
         <a
           href="https://api.whatsapp.com/send?phone=%2B6287776474959&text=Halo Kak saya boleh minta Price Listnya ?"
