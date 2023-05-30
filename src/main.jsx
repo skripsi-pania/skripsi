@@ -7,12 +7,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { BrowserRouter } from "react-router-dom";
-import ScrollToTop from "./Components/ScrolltoTop";
+import ScrollToTop from "./Components/ScrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <ScrollToTop />
-
     <App />
   </BrowserRouter>
 );

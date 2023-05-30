@@ -6,6 +6,17 @@ import Navbar from "./Navbar";
 import Weddingonly from "./Wedding/Weddingonly";
 
 export default function Wedding() {
+  (function ($) {
+    /*--Scroll Back to Top Button Show--*/
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $("#myBtn").fadeIn();
+      } else {
+        $("#myBtn").fadeOut();
+      }
+    });
+  })(jQuery);
   //Click event scroll to top button jquery
   const scrollToTop = () => {
     window.scrollTo({
