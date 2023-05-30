@@ -28,6 +28,7 @@ export default function Wedding() {
     <>
       <Navbar />
       <button onClick={scrollToTop}>Scroll to Top</button>
+      <h3>alooo</h3>
       <Weddingonly />
       {/* <OurGallery /> */}
       <IgdanWa />
