@@ -30,6 +30,8 @@ export default function Wedding() {
       <Weddingonly />
       {/* <OurGallery /> */}
       <IgdanWa />
+      <button onClick={scrollToTop}>Scroll to Top</button>
+
       <Footer />
       <button
         type="button"
