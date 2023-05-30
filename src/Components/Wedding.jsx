@@ -7,14 +7,17 @@ import Weddingonly from "./Wedding/Weddingonly";
 
 export default function Wedding() {
   (function ($) {
-    /*--Scroll Back to Top Button Show--*/
+    $(document).ready(function () {
+      // Initially hide the button
+      $("#myBtn").hide();
 
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        $("#myBtn").fadeIn();
-      } else {
-        $("#myBtn").fadeOut();
-      }
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+          $("#myBtn").fadeIn();
+        } else {
+          $("#myBtn").fadeOut();
+        }
+      });
     });
   })(jQuery);
   //Click event scroll to top button jquery

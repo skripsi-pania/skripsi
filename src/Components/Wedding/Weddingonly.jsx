@@ -167,7 +167,7 @@ export default function Weddingonly() {
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/wedding/wedding8.jpg" alt="" />
+              <img src="./makeup/wedding/wedding7.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
@@ -177,7 +177,7 @@ export default function Weddingonly() {
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/wedding/wedding8.jpg" alt="" />
+              <img src="./makeup/wedding/wedding7.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
@@ -187,37 +187,7 @@ export default function Weddingonly() {
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/wedding/wedding8.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
               <img src="./makeup/wedding/wedding7.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding8.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding8.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding8.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
