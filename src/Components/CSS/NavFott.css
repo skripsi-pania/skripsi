@@ -67,7 +67,8 @@ p.abc {
 
 li:before {
   content: "";
-  background: #ffc3d8;
+  /* ini garis pink loh yaaa  */
+  /* background: #ffc3d8; */
   display: block;
   position: absolute;
   bottom: -3px;

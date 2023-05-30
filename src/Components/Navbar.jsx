@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -23,11 +24,14 @@ function Navbar() {
 
           <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav col navsatu navawall">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Wedding
-                </a>
-              </li>
+              <Link to={"/wedding"} style={{ textDecoration: "none" }}>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Wedding
+                  </a>
+                </li>
+              </Link>
+
               {/* <!-- DROPDOWN-------------------- --> */}
               {/* <li className="nav-item dropdown navawall"> */}
               {/* <a
