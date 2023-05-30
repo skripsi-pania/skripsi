@@ -6,17 +6,6 @@ import Navbar from "./Navbar";
 import Weddingonly from "./Wedding/Weddingonly";
 
 export default function Wedding() {
-  (function ($) {
-    /*--Scroll Back to Top Button Show--*/
-
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        $("#myBtn").fadeIn();
-      } else {
-        $("#myBtn").fadeOut();
-      }
-    });
-  })(jQuery);
   //Click event scroll to top button jquery
   const scrollToTop = () => {
     window.scrollTo({
@@ -26,15 +15,15 @@ export default function Wedding() {
   };
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <button onClick={scrollToTop}>Scroll to Top</button>
       <h3>alooo</h3>
-      {/* <Weddingonly /> */}
-      {/* <OurGallery /> */}
-      {/* <IgdanWa /> */}
+      <Weddingonly />
+      <OurGallery />
+      <IgdanWa />
 
-      {/* <Footer /> */}
-      {/* <button
+      <Footer />
+      <button
         type="button"
         onClick={scrollToTop}
         id="myBtn"
@@ -55,7 +44,7 @@ export default function Wedding() {
           style={{ fontSize: "48px", color: "black" }}
           title="Whatsapp"
         ></i>
-      </button> */}
+      </button>
     </>
   );
 }
