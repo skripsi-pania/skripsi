@@ -6,10 +6,12 @@ function Navbar() {
     <div id="navbarr">
       <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
         <div class="container-fluid">
-          <p class="navbar-brand iconimg" href="#">
-            {/* <center> */}
-            <img src="rins3.gif" /> {/* </center> */}
-          </p>
+          <Link to="/">
+            <p class="navbar-brand iconimg" href="#">
+              {/* <center> */}
+              <img src="rins3.gif" /> {/* </center> */}
+            </p>
+          </Link>
           <button
             class="navbar-toggler togglee"
             type="button"

@@ -1,15 +1,56 @@
 import OurGallery from "./Dashboard/OurGallery";
 import Footer from "./Footer";
+import IgdanWa from "./IgdanWa";
 import Navbar from "./Navbar";
 import Weddingonly from "./Wedding/Weddingonly";
 
 export default function Wedding() {
+  (function ($) {
+    /*--Scroll Back to Top Button Show--*/
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $("#myBtn").fadeIn();
+      } else {
+        $("#myBtn").fadeOut();
+      }
+    });
+
+    //Click event scroll to top button jquery
+
+    $("#myBtn").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+  })(jQuery);
+
   return (
     <>
       <Navbar />
       <Weddingonly />
       {/* <OurGallery /> */}
+      <IgdanWa />
       <Footer />
+      <button
+        id="myBtn"
+        onclick="topFunction()"
+        className="arrow_float"
+        target="_blank"
+        style={{
+          backgroundColor: "transparent",
+          backgroundRepeat: "no-repeat",
+          border: "none",
+          cursor: "pointer",
+          overflow: "hidden",
+          outline: "none",
+        }}
+      >
+        <i
+          className="	fa fa-arrow-circle-up"
+          style={{ fontSize: "48px", color: "black" }}
+          title="Whatsapp"
+        ></i>
+      </button>
     </>
   );
 }
