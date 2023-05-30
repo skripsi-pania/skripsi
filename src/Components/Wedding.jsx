@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import OurGallery from "./Dashboard/OurGallery";
 import Footer from "./Footer";
 import IgdanWa from "./IgdanWa";
@@ -15,15 +16,32 @@ export default function Wedding() {
         $("#myBtn").fadeOut();
       }
     });
-
-    //Click event scroll to top button jquery
-
-    $("#myBtn").click(function () {
-      $("html, body").animate({ scrollTop: 0 }, 600);
-      return false;
-    });
   })(jQuery);
+  //Click event scroll to top button jquery
+  const [isVisible, setIsVisible] = useState(false);
 
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const Wedding = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
   return (
     <>
       <Navbar />
@@ -32,6 +50,8 @@ export default function Wedding() {
       <IgdanWa />
       <Footer />
       <button
+        type="button"
+        onClick={Wedding}
         id="myBtn"
         onclick="topFunction()"
         className="arrow_float"
