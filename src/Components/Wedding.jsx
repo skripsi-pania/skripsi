@@ -27,10 +27,10 @@ export default function Wedding() {
   return (
     <>
       <Navbar />
+      <button onClick={scrollToTop}>Scroll to Top</button>
       <Weddingonly />
       {/* <OurGallery /> */}
       <IgdanWa />
-      <button onClick={scrollToTop}>Scroll to Top</button>
 
       <Footer />
       <button
