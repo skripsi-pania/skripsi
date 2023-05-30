@@ -26,15 +26,15 @@ export default function Wedding() {
   };
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <button onClick={scrollToTop}>Scroll to Top</button>
       <h3>alooo</h3>
-      <Weddingonly />
+      {/* <Weddingonly /> */}
       {/* <OurGallery /> */}
-      <IgdanWa />
+      {/* <IgdanWa /> */}
 
-      <Footer />
-      <button
+      {/* <Footer /> */}
+      {/* <button
         type="button"
         onClick={scrollToTop}
         id="myBtn"
@@ -55,7 +55,7 @@ export default function Wedding() {
           style={{ fontSize: "48px", color: "black" }}
           title="Whatsapp"
         ></i>
-      </button>
+      </button> */}
     </>
   );
 }
