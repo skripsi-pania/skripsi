@@ -20,9 +20,10 @@ function Cover() {
 
           <div className="col">
             <img
-              src="makeup/cover3.png"
-              className="coverku"
-              style={{ borderRadius: "1vw" }}
+              src="makeup/wedding/newBanner.PNG"
+              className="coverku0"
+              style={{ marginLeft: "-30px", marginTop: "5px" }}
+              width={600}
             />
           </div>
         </div>

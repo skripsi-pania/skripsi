@@ -90,7 +90,152 @@ function OurGallery() {
             }}
           />
         </div>
-        <div class="col" style={{ paddingTop: "50px" }}>
+        {/* ---------------------- carou ---------------------------- */}
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          style={{
+            marginTop: "60px",
+            marginBottom: "60px",
+            width: "50%",
+            // border: "ridge",
+            height: "500px",
+          }}
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active carou1 container row">
+              <div
+                class="col"
+                // style={{
+                //   border: "ridge",
+                // }}
+              >
+                <img
+                  src="./makeup/IMG_9427.jpg"
+                  class="dc_s2 carou1"
+                  width={250}
+                  height={270}
+                  style={{
+                    borderRadius: "35px",
+                    marginLeft: "100px !important",
+                  }}
+                />
+                <img
+                  src="./makeup/IMG_9428.jpg"
+                  width={250}
+                  height={270}
+                  // height={300}
+                  style={{
+                    borderRadius: "35px",
+                    marginLeft: "50px",
+                  }}
+                />
+              </div>
+              <div
+                class="col"
+                style={{
+                  marginTop: "20px",
+                }}
+              >
+                <img
+                  src="./makeup/IMG_9426.jpg"
+                  class="dc_s2"
+                  width={250}
+                  height={270}
+                  style={{ borderRadius: "35px" }}
+                />
+                <img
+                  src="./makeup/IMG_9425.jpg"
+                  class="dc_s2"
+                  width={250}
+                  height={270}
+                  style={{ borderRadius: "35px", marginLeft: "50px" }}
+                />
+              </div>
+
+              <br />
+            </div>
+            <div class="carousel-item carou1">
+              <div
+                class="col"
+                // style={{
+                //   border: "ridge",
+                // }}
+              >
+                <img
+                  src="./makeup/wedding/wedding2.jpg"
+                  class="dc_s2 carou1"
+                  width={250}
+                  height={270}
+                  style={{
+                    borderRadius: "35px",
+                    marginLeft: "100px !important",
+                  }}
+                />
+                <img
+                  src="./makeup/wedding/wedding8.jpg"
+                  width={250}
+                  height={270}
+                  // height={300}
+                  style={{
+                    borderRadius: "35px",
+                    marginLeft: "50px",
+                  }}
+                />
+              </div>
+              <div
+                class="col"
+                style={{
+                  marginTop: "20px",
+                }}
+              >
+                <img
+                  src="./makeup/IMG_9426.jpg"
+                  class="dc_s2"
+                  width={250}
+                  height={270}
+                  style={{ borderRadius: "35px" }}
+                />
+                <img
+                  src="./makeup/IMG_9425.jpg"
+                  class="dc_s2"
+                  width={250}
+                  height={270}
+                  style={{ borderRadius: "35px", marginLeft: "50px" }}
+                />
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        {/* ----------------------------- batas carouuuuu ----------------------- */}
+        {/* <div class="col" style={{ paddingTop: "50px" }}>
           <center>
             <div class="col row me-0">
               <div class="col">
@@ -130,7 +275,7 @@ function OurGallery() {
               </div>
             </div>
           </center>
-        </div>
+        </div> */}
       </div>
     </div>
   );

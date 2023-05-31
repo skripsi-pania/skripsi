@@ -102,42 +102,12 @@ export default function Weddingonly() {
           {/* Images */}
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/wedding/wedding1.jpg" alt="" />
+              <img src="./makeup/wedding/IMG_9890.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/wedding/wedding1.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding1.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding1.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding1.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding1.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding1.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding10.jpg" alt="" />
+              <img src="./makeup/wedding/IMG_9884.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
@@ -147,12 +117,42 @@ export default function Weddingonly() {
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/wedding/wedding4.jpg" alt="" />
+              <img src="./makeup/wedding/IMG_9886.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/wedding/wedding5.jpg" alt="" />
+              <img src="./makeup/wedding/IMG_9904.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/wedding/IMG_9883.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/wedding/IMG_9911.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/wedding/IMG_9887.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/wedding/IMG_9888.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/wedding/IMG_9889.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/wedding/IMG_9908.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
@@ -167,52 +167,12 @@ export default function Weddingonly() {
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
+              <img src="./makeup/wedding/wedding10.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
+              <img src="./makeup/wedding/IMG_9885.jpg" alt="" />
             </div>
           </div>
         </div>
