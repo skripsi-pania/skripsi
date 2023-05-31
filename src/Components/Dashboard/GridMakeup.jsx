@@ -26,7 +26,7 @@ function GridMakeup() {
             <div className="catGrid cardGridWed2">
               <p class="test">Wedding</p>
               <center>
-                <Link to="/wedding" target="_blank">
+                <Link to="/wedding">
                   <button class="test"> Click me!</button>
                 </Link>
               </center>
