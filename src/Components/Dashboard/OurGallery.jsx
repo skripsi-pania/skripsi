@@ -219,7 +219,7 @@ function OurGallery() {
               ></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button
+            {/* <button
               class="carousel-control-next"
               type="button"
               data-bs-target="#carouselExampleControls"
@@ -230,7 +230,7 @@ function OurGallery() {
                 aria-hidden="true"
               ></span>
               <span class="visually-hidden">Next</span>
-            </button>
+            </button> */}
           </div>
         </div>
 

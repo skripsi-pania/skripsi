@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import IgdanWa from "./IgdanWa";
 import Navbar from "./Navbar";
 import Weddingonly from "./Wedding/Weddingonly";
+import WeddingCover from "./Wedding/WeddingCover";
 
 export default function Wedding() {
   (function ($) {
@@ -12,7 +13,7 @@ export default function Wedding() {
       $("#myBtn").hide();
 
       $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
+        if ($(this).scrollTop() > 1200) {
           $("#myBtn").fadeIn();
         } else {
           $("#myBtn").fadeOut();
@@ -30,6 +31,8 @@ export default function Wedding() {
   return (
     <>
       <Navbar />
+      <WeddingCover />
+      <br />
       <Weddingonly />
       <OurGallery />
       <IgdanWa />

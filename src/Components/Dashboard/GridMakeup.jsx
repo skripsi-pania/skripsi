@@ -1,5 +1,6 @@
 import React from "react";
 import "./grid.css";
+import { Link } from "react-router-dom";
 function GridMakeup() {
   return (
     <>
@@ -25,7 +26,9 @@ function GridMakeup() {
             <div className="catGrid cardGridWed2">
               <p class="test">Wedding</p>
               <center>
-                <button class="test"> Click me!</button>
+                <Link to="/wedding" target="_blank">
+                  <button class="test"> Click me!</button>
+                </Link>
               </center>
             </div>
           </div>

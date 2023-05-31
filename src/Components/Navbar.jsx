@@ -26,7 +26,15 @@ function Navbar() {
 
           <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav col navsatu navawall">
-              <Link to={"/wedding"} style={{ textDecoration: "none" }}>
+              <Link
+                to={"/wedding"}
+                style={{
+                  textDecoration: "none",
+                  fontFamily: "Playfair Display",
+                  fontSize: "21px",
+                  fontWeight: "600",
+                }}
+              >
                 <li class="nav-item">
                   <a class="nav-link" href="#">
                     Wedding
@@ -76,15 +84,33 @@ function Navbar() {
               {/* </div> */}
               {/* </li> */}
               <li class="nav-item navawall">
-                <a class="nav-link " href="#">
-                  Engagement
-                </a>
+                <Link
+                  style={{
+                    textDecoration: "none",
+                    fontFamily: "Playfair Display",
+                    fontSize: "21px",
+                    fontWeight: "600",
+                  }}
+                >
+                  <a class="nav-link " href="#">
+                    Engagement
+                  </a>
+                </Link>
               </li>
-              <li class="nav-item navawall">
-                <a class="nav-link " href="#">
-                  Graduation
-                </a>
-              </li>
+              <Link
+                style={{
+                  textDecoration: "none",
+                  fontFamily: "Playfair Display",
+                  fontSize: "21px",
+                  fontWeight: "600",
+                }}
+              >
+                <li class="nav-item navawall">
+                  <a class="nav-link " href="#">
+                    Graduation
+                  </a>
+                </li>
+              </Link>
             </ul>
             <ul class="navbar-nav col-6 lore navdua">
               <center>

@@ -9,6 +9,10 @@ p {
   font-family: "Playfair Display";
 }
 
+.navawall {
+  margin-left: 20px;
+  /* border: ridge; */
+}
 .iconimg img {
   width: 35vw;
   /* border: ridge; */
@@ -370,6 +374,10 @@ footer {
 }
 .foth1 {
   text-align: center;
+  color: white;
+}
+.foth2 {
+  text-align: left;
   color: white;
 }
 

@@ -176,7 +176,7 @@ export default function Weddingonly() {
             </div>
           </div>
         </div>
-        <div className="pagination">
+        {/* <div className="pagination">
           <button
             onClick={handlePrevPage}
             disabled={currentPage === 1}
@@ -197,7 +197,7 @@ export default function Weddingonly() {
           >
             Next
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );
