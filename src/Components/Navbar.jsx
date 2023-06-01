@@ -85,6 +85,7 @@ function Navbar() {
               {/* </li> */}
               <li class="nav-item navawall">
                 <Link
+                  to="/engagement"
                   style={{
                     textDecoration: "none",
                     fontFamily: "Playfair Display",
@@ -98,6 +99,7 @@ function Navbar() {
                 </Link>
               </li>
               <Link
+                to="/graduation"
                 style={{
                   textDecoration: "none",
                   fontFamily: "Playfair Display",
