@@ -148,6 +148,46 @@ export default function Engagementonly() {
               <img src="./makeup/engagement/IMG_9968.jpg" alt="" />
             </div>
           </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/engagement/IMG_0079.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/engagement/IMG_0087.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/engagement/IMG_0088.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/engagement/IMG_0082.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/engagement/IMG_0069.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/engagement/IMG_0078.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/engagement/IMG_0089.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/engagement/IMG_0113.jpg" alt="" />
+            </div>
+          </div>
         </div>
         {/* <div className="pagination">
           <button

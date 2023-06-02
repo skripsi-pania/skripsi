@@ -175,6 +175,16 @@ export default function Weddingonly() {
               <img src="./makeup/wedding/IMG_9885.jpg" alt="" />
             </div>
           </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/wedding/IMG_9972.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/wedding/IMG_9988.JPG" alt="" />
+            </div>
+          </div>
         </div>
         {/* <div className="pagination">
           <button

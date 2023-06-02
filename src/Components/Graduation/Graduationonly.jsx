@@ -101,18 +101,18 @@ export default function Graduationonly() {
           {/* Images */}
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/engagement/IMG_9973.jpg" alt="" />
+              <img src="./makeup/graduation/IMG_0061.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/engagement/IMG_9976.jpg" alt="" />
+              <img src="./makeup/graduation/IMG_0072.jpg" alt="" />
             </div>
           </div>
           {/* <div className="gallery-item">
             <div className="content">
               <img
-                src="./makeup/engagement/IMG_9989.JPG"
+                src="./makeup/graduation/IMG_9989.JPG"
                 alt=""
                 class="overpic"
               />
@@ -120,32 +120,67 @@ export default function Graduationonly() {
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/engagement/IMG_9990.JPG" alt="" />
+              <img src="./makeup/graduation/IMG_9990.JPG" alt="" />
             </div>
           </div> */}
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/engagement/IMG_9966.jpg" alt="" />
+              <img src="./makeup/graduation/IMG_0062.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/engagement/IMG_9965.jpg" alt="" />
+              <img src="./makeup/graduation/IMG_0065.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/engagement/IMG_9967.jpg" alt="" />
+              <img src="./makeup/graduation/IMG_0070.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/engagement/IMG_9971.jpg" alt="" />
+              <img src="./makeup/graduation/IMG_0108.jpg" alt="" />
             </div>
           </div>
           <div className="gallery-item">
             <div className="content">
-              <img src="./makeup/engagement/IMG_9968.jpg" alt="" />
+              <img src="./makeup/graduation/IMG_0072.jpg" alt="" />
+            </div>
+          </div>{" "}
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/graduation/IMG_0110.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/graduation/IMG_0073.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/graduation/IMG_0122.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/graduation/IMG_0111.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/graduation/IMG_0071.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/graduation/IMG_0109.jpg" alt="" />
+            </div>
+          </div>
+          <div className="gallery-item">
+            <div className="content">
+              <img src="./makeup/graduation/IMG_0112.jpg" alt="" />
             </div>
           </div>
         </div>

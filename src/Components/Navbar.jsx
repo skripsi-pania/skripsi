@@ -117,9 +117,16 @@ function Navbar() {
             <ul class="navbar-nav col-6 lore navdua">
               <center>
                 <div class="nav-item loredet loginbutton0">
-                  <button class="nav-link btn" id="loginbutton" href="#">
-                    About Us
-                  </button>
+                  <Link
+                    to="/aboutus"
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
+                    <button class="nav-link btn" id="loginbutton" href="#">
+                      About Us
+                    </button>
+                  </Link>
                 </div>
               </center>
               <center>
