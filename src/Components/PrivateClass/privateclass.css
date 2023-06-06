@@ -102,10 +102,10 @@
   background-image: url("../makeup/pc.jpg");
 }
 .imagePC2 {
-  background-image: url("./makeup/pc5.jpg");
+  background-image: url("../makeup/pc5.jpg");
 }
 .imagePC3 {
-  background-image: url("./makeup/pc2.jpg");
+  background-image: url("../makeup/pc2.jpg");
 }
 
 .imagePC:hover {
