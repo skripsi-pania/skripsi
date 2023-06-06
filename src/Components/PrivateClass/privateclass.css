@@ -99,7 +99,7 @@
   background-size: cover;
 }
 .imagePC1 {
-  background-image: url("./makeup/pc.jpg");
+  background: url("./makeup/pc.jpg");
 }
 .imagePC2 {
   background-image: url("./makeup/pc5.jpg");
