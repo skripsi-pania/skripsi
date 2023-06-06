@@ -6,6 +6,7 @@ import Wedding from "./Components/Wedding";
 import Engagement from "./Components/Engagement";
 import Graduation from "./Components/Graduation";
 import AboutUs from "./Components/AboutUs";
+import PrivateClass from "./Components/PrivateClass";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/engagement" element={<Engagement />} />
         <Route path="/graduation" element={<Graduation />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/privateclass" element={<PrivateClass />} />
       </Routes>
     </div>
   );

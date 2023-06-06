@@ -1,4 +1,5 @@
 import Footer from "./Footer";
+import IgdanWa from "./IgdanWa";
 import Navbar from "./Navbar";
 
 export default function AboutUs() {
@@ -61,6 +62,7 @@ export default function AboutUs() {
       <br />
       <br />
       <br />
+      <IgdanWa />
       <Footer />
     </>
   );

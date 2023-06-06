@@ -131,13 +131,20 @@ function Navbar() {
               </center>
               <center>
                 <div class="nav-item">
-                  <button
-                    class="nav-link btn-0 btn-3"
-                    id="registerbutton"
-                    href="#"
+                  <Link
+                    to="/privateclass"
+                    style={{
+                      textDecoration: "none",
+                    }}
                   >
-                    Private Class &rarr;
-                  </button>
+                    <button
+                      class="nav-link btn-0 btn-3"
+                      id="registerbutton"
+                      href="#"
+                    >
+                      Private Class &rarr;
+                    </button>
+                  </Link>
                 </div>
               </center>
             </ul>

@@ -37,7 +37,9 @@ function GridMakeup() {
           <div className="catGrid ">
             <p>Engagement</p>
             <center>
-              <button> Click me!</button>
+              <Link to="/engagement">
+                <button> Click me!</button>
+              </Link>
             </center>
           </div>
         </div>
@@ -45,7 +47,9 @@ function GridMakeup() {
           <div className="catGrid ">
             <p>Graduation</p>
             <center>
-              <button> Click me!</button>
+              <Link to="/graduation">
+                <button> Click me!</button>
+              </Link>
             </center>
           </div>
         </div>
