@@ -1,3 +1,4 @@
+import OurGallery from "./Dashboard/OurGallery";
 import Footer from "./Footer";
 import IgdanWa from "./IgdanWa";
 import Navbar from "./Navbar";
@@ -9,6 +10,7 @@ export default function PrivateClass() {
       <Navbar />
       <CardPC />
       <IgdanWa />
+      <OurGallery />
       <Footer />
     </>
   );

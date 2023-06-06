@@ -1,3 +1,4 @@
+import OurGallery from "./Dashboard/OurGallery";
 import Footer from "./Footer";
 import IgdanWa from "./IgdanWa";
 import Navbar from "./Navbar";
@@ -37,12 +38,29 @@ export default function AboutUs() {
                 width={275}
               />
             </div>
-            <div class="col-5" style={{ paddingTop: "30px" }}>
-              text
+            <div class="col-5" style={{ marginTop: "-5px" }}>
+              Rins adalah seorang makeup artist yang berbakat dan terkenal asal
+              Indonesia. Dikenal karena keterampilannya dalam menciptakan
+              tampilan riasan yang cantik dan menawan, Rins telah memperoleh
+              pengakuan luas di industri kecantikan. Dengan pengalaman
+              bertahun-tahun di dunia tata rias, ia telah bekerja dengan
+              berbagai klien, termasuk selebriti, model, dan juga bekerja dalam
+              industri periklanan dan fashion.
             </div>
 
-            <div class="col-5" style={{ paddingTop: "30px" }}>
-              textttt uga
+            <div
+              class="col-5"
+              style={{
+                paddingTop: "20px",
+                // border: "ridge",
+                paddingLeft: "70px",
+              }}
+            >
+              Rins juga dikenal karena menggunakan produk-produk berkualitas
+              tinggi dan teknik yang canggih dalam pekerjaannya. Ia terus
+              mengikuti perkembangan terkini dalam industri kecantikan dan
+              senantiasa mengembangkan keterampilannya melalui pelatihan dan
+              pengalaman.
             </div>
             <div class="col-7" style={{}}>
               <center>
@@ -63,6 +81,7 @@ export default function AboutUs() {
       <br />
       <br />
       <IgdanWa />
+      <OurGallery />
       <Footer />
     </>
   );

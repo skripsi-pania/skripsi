@@ -1,9 +1,36 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useRef } from "react";
+import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/js/src/modal";
 
 function OurGallery() {
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    let intervalId;
+
+    const startCarousel = () => {
+      intervalId = setInterval(() => {
+        carousel.next();
+      }, 2); // Atur kecepatan carousel disini (dalam milidetik)
+    };
+
+    const stopCarousel = () => {
+      clearInterval(intervalId);
+    };
+
+    carousel.addEventListener("mouseenter", stopCarousel);
+    carousel.addEventListener("mouseleave", startCarousel);
+
+    startCarousel();
+
+    return () => {
+      stopCarousel();
+      carousel.removeEventListener("mouseenter", stopCarousel);
+      carousel.removeEventListener("mouseleave", startCarousel);
+    };
+  }, []);
   return (
     <div style={{ margin: "0" }}>
       <div
@@ -93,6 +120,7 @@ function OurGallery() {
         {/* ---------------------- carou ---------------------------- */}
         <div
           id="carouselExampleControls"
+          ref={carouselRef}
           class="carousel slide"
           data-bs-ride="carousel"
           style={{

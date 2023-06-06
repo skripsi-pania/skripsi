@@ -57,7 +57,6 @@ export default function Wedding() {
         <i
           className="	fa fa-arrow-circle-up"
           style={{ fontSize: "48px", color: "black" }}
-          title="Whatsapp"
         ></i>
       </button>
     </>
