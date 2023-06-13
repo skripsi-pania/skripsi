@@ -49,30 +49,19 @@ const Login = () => {
         }
       );
 
-      // const admin = await axios.post(
-      //   "https://admin-skripsivania.onrender.com/admin"
-      // );
-      // console.log(admin);
       console.log(respons);
       console.log(respons.data.token);
       console.log(respons.data.username);
       console.log(respons.data.email);
       console.log(respons.data.roles);
       const obj = Object.values(respons.data.roles);
-      // const propertyValues = Object.values(respons.data.email);
-      // console.log(obj[0]); ini buat nampilin di console Roles nya berapa tanpa tanda ".." atau [....]
 
-      // console.log(respons.data.roles);
-      // console.log(respons);
-      // localStorage.setItem("account", email);
-      // localStorage.setItem("username", username);
-      // localStorage.setItem("roles", roles);
       localStorage.setItem("token", respons.data.token);
       localStorage.setItem("username", respons.data.username);
 
       console.log("bawah obj");
       console.log(obj);
-      if (obj[0] === "646a007b18a2af59b912f2cc") {
+      if (obj[0] === "646a007b18a2af59b912f2cd") {
         localStorage.setItem("roles", roles);
         localStorage.setItem("account", email);
         localStorage.setItem("username", respons.data.username);
@@ -93,6 +82,20 @@ const Login = () => {
     } catch (error) {
       alert("Mohon Check kembali data Anda.");
     }
+
+    // Interceptor untuk set header Authorization dengan Bearer token dari localStorage
+    axios.interceptors.request.use(
+      (config) => {
+        const token = localStorage.getItem("token");
+        if (token) {
+          config.headers.authorization = `Bearer ${token}`;
+        }
+        return config;
+      },
+      (error) => {
+        return Promise.reject(error);
+      }
+    );
   };
 
   return (

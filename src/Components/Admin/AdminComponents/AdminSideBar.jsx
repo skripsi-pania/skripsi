@@ -12,14 +12,14 @@ function AdminSideBar() {
     localStorage.removeItem("username");
     localStorage.removeItem("geo-location");
     // window.location.reload()
-    navigation(`/`);
+    navigation(`/admin-login`);
   };
 
   return (
     <div className="sidebarr">
       {/* <!-- Sidebar --> */}
       <ul
-        className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        className="navbar-nav  sidebar sidebar-dark accordion"
         id="accordionSidebar"
       >
         {/* <!-- Sidebar - Brand --> */}
@@ -43,6 +43,12 @@ function AdminSideBar() {
           style={{ color: "white", textDecoration: "none", marginTop: "20px" }}
         >
           <h6 class="mx-3">Dashboard</h6>
+        </Link>
+        <Link
+          to="/admin/add-new-image"
+          style={{ color: "white", textDecoration: "none", marginTop: "20px" }}
+        >
+          <h6 class="mx-3">Add new Image</h6>
         </Link>
 
         {/* <!-- Divider --> */}
@@ -90,20 +96,17 @@ function AdminSideBar() {
         <hr className="sidebar-divider d-none d-md-block" />
         <hr className="sidebar-divider d-none d-md-block" />
         <hr className="sidebar-divider d-none d-md-block" />
-        <hr className="sidebar-divider d-none d-md-block" />
-        <hr className="sidebar-divider d-none d-md-block" />
-        <hr className="sidebar-divider d-none d-md-block" />
-        <hr className="sidebar-divider d-none d-md-block" />
-        <hr className="sidebar-divider d-none d-md-block" />
 
         {/* <!-- Sidebar Message --> */}
         <div className="sidebar-card d-lg-flex logoutAdmin">
           {/* <img className="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="..."/> */}
-          <p className="text-center mb-2">Thankyou, see you again!</p>
+          <p className="text-center mb-2" style={{ color: "white" }}>
+            Thankyou, see you again!
+          </p>
           <a
             onClick={HandleLogout}
-            className="btn btn-success btn-sm "
-            href="https://startbootstrap.com/theme/sb-admin-pro"
+            className="btn btn-sm "
+            style={{ color: "white" }}
           >
             Logout
           </a>

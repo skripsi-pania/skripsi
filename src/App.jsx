@@ -9,6 +9,8 @@ import AboutUs from "./Components/AboutUs";
 import PrivateClass from "./Components/PrivateClass";
 import AdminPage from "./Components/Admin/AdminPage";
 import LoginUtama from "./Components/LogReg/LoginUtama";
+import AdminCrud from "./Components/Admin/AdminCrud";
+import AddNew from "./Components/Admin/AdminComponents/AddNew";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/privateclass" element={<PrivateClass />} />
         <Route path="/admin-login" element={<LoginUtama />} />
         <Route path="/admin/dashboard" element={<AdminPage />} />
+        <Route path="/admin-crud" element={<AdminCrud />} />
+        <Route path="/admin/add-new-image" element={<AddNew />} />
       </Routes>
     </div>
   );
