@@ -44,7 +44,7 @@ export default function Footer() {
                     class="fa"
                     target="_blank"
                   >
-                    <img src="instagram.svg" width={30} title="Instagram" />
+                    <img src="/instagram.svg" width={30} title="Instagram" />
                   </a>
                 </div>
                 <div class="col-1" style={{ marginRight: "15px" }}>
@@ -53,7 +53,7 @@ export default function Footer() {
                     class=""
                     target="_blank"
                   >
-                    <img src="tiktok.svg" width={30} title="Tiktok" />
+                    <img src="/tiktok.svg" width={30} title="Tiktok" />
                   </a>
                 </div>
                 <div class="col-1" style={{ marginRight: "15px" }}>
@@ -63,7 +63,7 @@ export default function Footer() {
                     class=""
                   >
                     <img
-                      src="youtube.svg"
+                      src="/youtube.svg"
                       width={35}
                       title="Youtube"
                       style={{ paddingTop: "5px" }}
@@ -77,7 +77,7 @@ export default function Footer() {
                     class=""
                   >
                     <img
-                      src="facebook.svg"
+                      src="/facebook.svg"
                       width={35}
                       title="Facebook"
                       style={{ paddingTop: "2px" }}
@@ -93,13 +93,13 @@ export default function Footer() {
               </h1>
               <div class="row" style={{ marginTop: "20px" }}>
                 <div class="col-2" style={{ marginRight: "15px" }}>
-                  <img src="bca.png" width={55} />
+                  <img src="/bca.png" width={55} />
                 </div>
                 <div class="col-2" style={{ marginRight: "15px" }}>
-                  <img src="mandiri.png" width={55} />
+                  <img src="/mandiri.png" width={55} />
                 </div>
                 <div class="col-2" style={{ marginRight: "15px" }}>
-                  <img src="visa.png" width={55} />
+                  <img src="/visa.png" width={55} />
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function Footer() {
               style={{ marginTop: "10px", borderRadius: "25px" }}
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4333184072266!2d106.9421905!3d-6.3378784999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d79d173e657%3A0x2d3cff2a85bfc06!2sRinsmakeup!5e0!3m2!1sen!2sid!4v1685549724954!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4333184072266!2d106.9421905!3d-6.3378784999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d79d173e657%3A0x2d3cff2a85bfc06!2sRinsmakeup!5e0!3m2!1sen!2sid!4v1686643777425!5m2!1sen!2sid"
                 width="320"
                 height="200"
                 style={{ border: "0", borderRadius: "25px" }}

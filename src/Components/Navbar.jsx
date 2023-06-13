@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// import Logo from "rins3.gif";
 
 function Navbar() {
   return (
@@ -9,7 +10,7 @@ function Navbar() {
           <Link to="/">
             <p class="navbar-brand iconimg" href="#">
               {/* <center> */}
-              <img src="rins3.gif" /> {/* </center> */}
+              <img src="/rins3.gif" /> {/* </center> */}
             </p>
           </Link>
           <button
