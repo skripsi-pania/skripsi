@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function AdminTopbar() {
+  const getUsersBE = async () => {
+    axios("https://skripsi-vaniasasikirana.onrender.com/userpage/")
+      .then((res) => {
+        console.log(res.data.data), setPostingan(res.data.data);
+      })
+      .catch((err) => console.log(err));
+  };
+  useEffect(() => {
+    // refreshToken();
+    getUsersBE();
+  }, []);
   return (
     <>
       <nav className="col navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -30,6 +41,17 @@ function AdminTopbar() {
             </div> */}
           </div>
         </form>
+        {/* <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          ></input>
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form> */}
         {/* <!-- Topbar Navbar --> */}
         <ul className="navbar-nav ml-auto">
           <div className="topbar-divider d-none d-sm-block"></div>

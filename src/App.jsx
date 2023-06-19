@@ -10,7 +10,8 @@ import PrivateClass from "./Components/PrivateClass";
 import AdminPage from "./Components/Admin/AdminPage";
 import LoginUtama from "./Components/LogReg/LoginUtama";
 import AdminCrud from "./Components/Admin/AdminCrud";
-import AddNew from "./Components/Admin/AdminComponents/AddNew";
+import AllContent from "./Components/Admin/AdminComponents/AllContent";
+import GetContent from "./Components/Admin/AdminComponents/GetContent";
 
 function App() {
   return (
@@ -25,7 +26,11 @@ function App() {
         <Route path="/admin-login" element={<LoginUtama />} />
         <Route path="/admin/dashboard" element={<AdminPage />} />
         <Route path="/admin-crud" element={<AdminCrud />} />
-        <Route path="/admin/add-new-image" element={<AddNew />} />
+        <Route path="/admin/allcontent" element={<AllContent />} />
+        <Route
+          path="/admin/allcontent/getcontent/:_id"
+          element={<GetContent />}
+        />
       </Routes>
     </div>
   );

@@ -45,10 +45,10 @@ function AdminSideBar() {
           <h6 class="mx-3">Dashboard</h6>
         </Link>
         <Link
-          to="/admin/add-new-image"
+          to="/admin/allcontent"
           style={{ color: "white", textDecoration: "none", marginTop: "20px" }}
         >
-          <h6 class="mx-3">Add new Image</h6>
+          <h6 class="mx-3">See All Content</h6>
         </Link>
 
         {/* <!-- Divider --> */}

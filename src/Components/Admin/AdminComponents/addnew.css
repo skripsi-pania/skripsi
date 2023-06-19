@@ -506,3 +506,21 @@ input[type="file"] {
 
     } */
 }
+
+.form-label {
+  margin-right: 5%; /* Sesuaikan dengan jarak yang diinginkan */
+  /* border: ridge; */
+}
+
+.tablee {
+  background: transparent;
+}
+
+.tablee td {
+  color: black !important;
+  font-size: 18px;
+}
+.tablee tr {
+  color: black !important;
+  font-size: 18px;
+}
