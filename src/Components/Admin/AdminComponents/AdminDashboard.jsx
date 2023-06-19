@@ -366,7 +366,7 @@ function AdminDashboard() {
                   className="form-control"
                   id="exampleFormControlTextarea1"
                   rows="1"
-                  placeholder="title"
+                  placeholder="judul file"
                   value={title}
                   htmlFor="title"
                   onChange={handleTitle}
@@ -376,7 +376,7 @@ function AdminDashboard() {
                   className="form-control"
                   id="exampleFormControlTextarea2"
                   rows="6"
-                  placeholder="Bagikan kondisi lingkungan sekitar Anda"
+                  placeholder="content category (wedding/engagement/graduation)"
                   value={content}
                   onChange={handleContent}
                 ></input>
@@ -384,7 +384,7 @@ function AdminDashboard() {
                   className="form-control"
                   id="exampleFormControlTextarea3"
                   rows="1"
-                  placeholder="Lokasi kejadian (Kota, Provinsi)"
+                  placeholder="nama file (FORMAT, jpg dan png only)"
                   value={alamat_url}
                   onChange={handleLokasi}
                 ></input>
