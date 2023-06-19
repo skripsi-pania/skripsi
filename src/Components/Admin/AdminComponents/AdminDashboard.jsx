@@ -405,7 +405,7 @@ function AdminDashboard() {
                     type="submit"
                     onClick={handleBtn2}
                   >
-                    Post
+                    Post alow
                   </button>
                 </center>
                 <br />
