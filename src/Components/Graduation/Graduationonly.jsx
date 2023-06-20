@@ -29,21 +29,6 @@ export default function Graduationonly() {
 
   useEffect(() => {
     const gallery = galleryRef.current;
-
-    const handleResize = () => {
-      resizeAll();
-    };
-
-    window.addEventListener("resize", handleResize);
-    resizeAll(); // Panggil resizeAll secara inisial untuk mengatur tata letak grid
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [resizeAll]);
-
-  useEffect(() => {
-    const gallery = galleryRef.current;
     const totalImages = gallery.querySelectorAll(".gallery-item").length;
     const totalPages = Math.ceil(totalImages / imagesPerPage);
 

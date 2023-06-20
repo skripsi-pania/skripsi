@@ -1,17 +1,26 @@
+.woi {
+  /* border: ridge; */
+  width: 1500px !important;
+  padding-left: 100px !important;
+}
+.wed0 {
+  background-image: url("/makeup/wedding4rem.jpg");
+  background-size: 365px 450px;
+}
+
 .cardGrid {
   position: relative;
   padding: 10px;
-  background-image: url("/makeup/wedding4rem.jpg");
-  background-size: 350px 420px;
-  margin-left: -100px;
+  /* margin-left: -100px; */
   background-repeat: no-repeat;
   /* border: ridge; */
   border-radius: 20px;
-  width: 350px !important;
+  /* width: 35px !important; */
   height: 320px;
   /* z-index: 1; */
   transition: all 500ms ease-in-out;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  /* margin-right: 0px; */
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
 }
 .cardGridEng {
@@ -22,7 +31,7 @@
   background-repeat: no-repeat;
   /* border: ridge; */
   border-radius: 20px;
-  width: 350px !important;
+  width: 365px !important;
   height: 320px;
   /* z-index: 1; */
   transition: all 500ms ease-in-out;
@@ -32,7 +41,7 @@
 /* aneeeeeeeeeeeeeeeeeeh */
 .cardGridWed:hover {
   background: rgba(2, 0, 0, 0.65) url("/makeup/wedding4rem.jpg");
-  background-size: 350px 420px;
+  background-size: 365px 450px;
   background-blend-mode: darken;
 }
 .cardGridEng:hover {
@@ -42,7 +51,7 @@
 }
 .cardGridGrad:hover {
   background: rgba(2, 0, 0, 0.65) url("/makeup/grad0rem.jpg");
-  background-size: 350px 380px;
+  background-size: 365px 380px;
   background-blend-mode: darken;
 }
 
@@ -50,11 +59,11 @@
   position: relative;
   padding: 10px;
   background-image: url("/makeup/grad0rem.jpg");
-  background-size: 350px 380px;
+  background-size: 365px 380px;
   background-repeat: no-repeat;
   /* border: ridge; */
   border-radius: 20px;
-  width: 350px !important;
+  width: 365px !important;
   height: 320px;
   /* z-index: 1; */
   transition: all 500ms ease-in-out;

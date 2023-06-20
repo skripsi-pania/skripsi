@@ -125,6 +125,17 @@ function GetContent() {
                     }}
                   />
                   <br /> <br />
+                  <p
+                    style={{
+                      fontSize: "18px",
+                      backgroundColor: "lightgray",
+                      borderRadius: "25px",
+                      padding: "10px",
+                      color: "black",
+                    }}
+                  >
+                    https://raw.githubusercontent.com/skripsi-pania/skripsi/main/public/makeup/all/
+                  </p>
                   <label className="form-label">Gambar :</label>
                   <input
                     placeholder=""

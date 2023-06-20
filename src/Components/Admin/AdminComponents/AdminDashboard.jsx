@@ -7,6 +7,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 
 function AdminDashboard() {
   const api_url = "https://skripsi-vaniasasikirana.onrender.com/admin";
+  const api_urlcon = "https://skripsi-vaniasasikirana.onrender.com/userpage/";
   const [totalSum, setTotalSum] = useState(0);
   const getUsersBE = async () => {
     axios
@@ -17,10 +18,55 @@ function AdminDashboard() {
       )
       .catch((err) => console.log(err));
   };
-
-  // useEffect(() => {
-  //   getUsersBE();
-  // }, []);
+  const [totalSumcon, setTotalSumcon] = useState(0);
+  const getCont = async () => {
+    axios
+      .get(api_urlcon)
+      .then(
+        (res) => setTotalSumcon(res.data.data.length)
+        // console.log(res.data.data)
+      )
+      .catch((err) => console.log(err));
+  };
+  const [totalSumWed, setTotalSumWed] = useState(0);
+  const getContWed = async () => {
+    axios
+      .get(api_urlcon)
+      .then((res) => {
+        const filteredDataWed = res.data.data.filter((item) =>
+          item.content.includes("wedding")
+        );
+        setTotalSumWed(filteredDataWed.length);
+        console.log(filteredDataWed);
+      })
+      .catch((err) => console.log(err));
+  };
+  const [totalSumEng, setTotalSumEng] = useState(0);
+  const getContEng = async () => {
+    axios
+      .get(api_urlcon)
+      .then((res) => {
+        const filteredDataEng = res.data.data.filter((item) =>
+          item.content.includes("engagement")
+        );
+        setTotalSumEng(filteredDataEng.length);
+        console.log(filteredDataEng);
+      })
+      .catch((err) => console.log(err));
+  };
+  const [totalSumGra, setTotalSumGra] = useState(0);
+  const getContGra = async () => {
+    axios
+      .get(api_urlcon)
+      .then((res) => {
+        const filteredDataGra = res.data.data.filter((item) =>
+          item.content.includes("graduation")
+        );
+        setTotalSumGra(filteredDataGra.length);
+        console.log(filteredDataGra);
+      })
+      .catch((err) => console.log(err));
+  };
 
   // ----------------------------- ini untuk register admin
   const [username, setNama] = useState("");
@@ -108,6 +154,10 @@ function AdminDashboard() {
 
   useEffect(() => {
     getUsersBE();
+    getCont();
+    getContWed();
+    getContEng();
+    getContGra();
 
     // yayyy ini berhasil untuk get local id ke stateeeeee
     const storedData = localStorage.getItem("username");
@@ -162,10 +212,7 @@ function AdminDashboard() {
   const getUsersBE2 = async () => {
     axios
       .get("https://skripsi-vaniasasikirana.onrender.com/userpage/")
-      .then(
-        (res) => setApiUser(res.data.data)
-        //    console.log(res.data.data)
-      )
+      .then((res) => setApiUser(res.data.data))
       .catch((err) => console.log(err));
   };
   return (
@@ -317,6 +364,17 @@ function AdminDashboard() {
               <p className="card-text">{totalSum} </p>
             </div>
           </div>
+          <div
+            className="col-12 card cardd"
+            style={{ height: "10rem", marginLeft: "50px" }}
+          >
+            <div className="card-body">
+              <h5 className="card-title">Total Content Semua Kategori</h5>
+              <hr />
+
+              <p className="card-text">{totalSumcon} </p>
+            </div>
+          </div>
           <br />
           <br />
           {/* ////////batas new gallery */}
@@ -340,7 +398,6 @@ function AdminDashboard() {
                     {/* ini username jir */}
                     <h4>Tambah Gallery Image</h4>
                     <br />
-
                     <input
                       className="form-control"
                       id="exampleFormControlTextarea1"
@@ -380,6 +437,20 @@ function AdminDashboard() {
                   value={content}
                   onChange={handleContent}
                 ></input>
+                <p
+                  style={{
+                    fontSize: "18px",
+                    backgroundColor: "lightgray",
+                    borderRadius: "25px",
+                    padding: "10px",
+                    color: "black",
+                    marginLeft: "75px",
+                    marginTop: "15px",
+                    width: "700px",
+                  }}
+                >
+                  https://raw.githubusercontent.com/skripsi-pania/skripsi/main/public/makeup/all/
+                </p>
                 <input
                   className="form-control"
                   id="exampleFormControlTextarea3"
@@ -405,13 +476,63 @@ function AdminDashboard() {
                     type="submit"
                     onClick={handleBtn2}
                   >
-                    Post alow
+                    Post
                   </button>
                 </center>
                 <br />
               </div>
             </div>
           </div>
+        </div>
+        <div
+          className="row"
+          style={{ width: "250px", marginTop: "79px", marginLeft: "20px" }}
+        >
+          <div
+            className="col-12 card cardd"
+            style={{ height: "10rem", marginLeft: "50px" }}
+          >
+            <div className="card-body">
+              <h5 className="card-title">Total Kategori Wedding</h5>
+              <hr />
+              {/* <p
+                className="card-subtitle mb-2 text-muted"
+                style={{ fontSize: "12px" }}
+              >
+                Total
+              </p> */}
+              <p className="card-text">{totalSumWed} </p>
+            </div>
+          </div>
+          <div
+            className="col-12 card cardd"
+            style={{ height: "10rem", marginLeft: "50px", marginTop: "8px" }}
+          >
+            <div className="card-body">
+              <h5 className="card-title">Total Kategori Engagement</h5>
+              <hr />
+
+              <p className="card-text">{totalSumEng} </p>
+            </div>
+          </div>
+          <br />
+        </div>
+
+        <div
+          className="row"
+          style={{ width: "250px", marginTop: "79px", marginLeft: "20px" }}
+        >
+          <div
+            className="col-12 card cardd"
+            style={{ height: "10rem", marginLeft: "50px" }}
+          >
+            <div className="card-body">
+              <h5 className="card-title">Total Kategori Graduation</h5>
+              <hr />
+              <p className="card-text">{totalSumGra} </p>
+            </div>
+          </div>
+          <br />
         </div>
       </div>
     </>

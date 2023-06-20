@@ -33,7 +33,7 @@ function Cover() {
           Browse & Discover
         </h2>
       </div>
-      <div class=" findd" style={{ marginLeft: "200px" }}>
+      <div class=" findd" style={{ marginLeft: "200px", color: "black" }}>
         <div class="text-find">
           <h3>Find your makeup needs right now</h3>
         </div>

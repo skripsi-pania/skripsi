@@ -16,44 +16,46 @@ function GridMakeup() {
           </div>
         </div>
       </div> */}
+      <center>
+        <div class="row align-items-center  woi">
+          <div class="col-3 cardGrid cardGridWed wed0">
+            <div class="basewed2">
+              <div className="catGrid cardGridWed2 wed1">
+                <p class="test">Wedding</p>
+                <center>
+                  <Link to="/wedding">
+                    <button class="test"> Click me!</button>
+                  </Link>
+                </center>
+              </div>
+            </div>
+          </div>
 
-      <div
-        class="row align-items-center container"
-        style={{ margin: "0 auto" }}
-      >
-        <div class="col-4 cardGrid cardGridWed">
-          <div class="basewed2">
-            <div className="catGrid cardGridWed2">
-              <p class="test">Wedding</p>
+          <div
+            class="col-3 cardGrid cardGridEng eng0"
+            style={{ marginLeft: "140px" }}
+          >
+            <div className="catGrid ">
+              <p>Engagement</p>
               <center>
-                <Link to="/wedding">
-                  <button class="test"> Click me!</button>
+                <Link to="/engagement">
+                  <button> Click me!</button>
+                </Link>
+              </center>
+            </div>
+          </div>
+          <div class="col-3 cardGrid cardGridGrad grad0">
+            <div className="catGrid grad1">
+              <p>Graduation</p>
+              <center>
+                <Link to="/graduation">
+                  <button> Click me!</button>
                 </Link>
               </center>
             </div>
           </div>
         </div>
-        <div class="col-4 cardGrid cardGridEng">
-          <div className="catGrid ">
-            <p>Engagement</p>
-            <center>
-              <Link to="/engagement">
-                <button> Click me!</button>
-              </Link>
-            </center>
-          </div>
-        </div>
-        <div class="col-4 cardGrid cardGridGrad">
-          <div className="catGrid ">
-            <p>Graduation</p>
-            <center>
-              <Link to="/graduation">
-                <button> Click me!</button>
-              </Link>
-            </center>
-          </div>
-        </div>
-      </div>
+      </center>
     </>
   );
 }

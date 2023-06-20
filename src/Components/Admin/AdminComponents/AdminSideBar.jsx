@@ -44,6 +44,9 @@ function AdminSideBar() {
         >
           <h6 class="mx-3">Dashboard</h6>
         </Link>
+        <div className="sidebar-heading">
+          -------------------------------------
+        </div>
         <Link
           to="/admin/allcontent"
           style={{ color: "white", textDecoration: "none", marginTop: "20px" }}
@@ -60,7 +63,7 @@ function AdminSideBar() {
         </div>
 
         {/* <!-- Nav Item - Pages Collapse Menu --> */}
-        <Link
+        {/* <Link
           to="/admin-crud"
           style={{ color: "white", textDecoration: "none", marginTop: "20px" }}
         >
@@ -83,7 +86,7 @@ function AdminSideBar() {
           style={{ color: "white", textDecoration: "none", marginTop: "20px" }}
         >
           <h6 class="mx-3">Manage Gallery Graduation</h6>
-        </Link>
+        </Link> */}
 
         {/* <!-- Divider --> */}
         <hr className="sidebar-divider d-none d-md-block" />

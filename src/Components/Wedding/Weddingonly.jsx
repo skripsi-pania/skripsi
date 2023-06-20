@@ -1,3 +1,4 @@
+import axios from "axios";
 import "./weddingonly.css";
 import React, { useEffect, useRef, useState, useCallback } from "react";
 
@@ -5,6 +6,7 @@ export default function Weddingonly() {
   const galleryRef = useRef(null);
   const [currentPage, setCurrentPage] = useState(1);
   const imagesPerPage = 8;
+  const [filteredData, setFilteredData] = useState([]);
 
   const resizeAll = useCallback(() => {
     const gallery = galleryRef.current;
@@ -14,7 +16,6 @@ export default function Weddingonly() {
     const getHeight = (item) => {
       return item.querySelector(".content").getBoundingClientRect().height;
     };
-    console.log("aktif mak");
     const altura = getVal(gallery, "grid-auto-rows");
     const gap = getVal(gallery, "grid-row-gap");
     gallery.querySelectorAll(".gallery-item").forEach((item, index) => {
@@ -28,20 +29,39 @@ export default function Weddingonly() {
     });
   }, []);
 
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(
+        "https://skripsi-vaniasasikirana.onrender.com/userpage/"
+      );
+      const data = response.data.data;
+      const filteredData = data.filter((item) => item.content === "wedding");
+      return filteredData;
+    } catch (error) {
+      console.log(error);
+      return [];
+    }
+  };
+
   useEffect(() => {
     const gallery = galleryRef.current;
-
     const handleResize = () => {
       resizeAll();
     };
 
     window.addEventListener("resize", handleResize);
-    resizeAll(); // Panggil resizeAll secara inisial untuk mengatur tata letak grid
+    resizeAll();
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, [resizeAll]);
+
+  useEffect(() => {
+    fetchData().then((data) => {
+      setFilteredData(data);
+    });
+  }, []);
 
   useEffect(() => {
     const gallery = galleryRef.current;
@@ -54,38 +74,27 @@ export default function Weddingonly() {
         index >= (currentPage - 1) * imagesPerPage &&
         index < currentPage * imagesPerPage;
 
-      el.style.display = isPageInRange ? "block" : "block"; //ini membuat semua gambar muncul popUp di halaman yg sama!!
+      el.style.display = isPageInRange ? "block" : "none";
 
-      el.addEventListener("click", () => {
+      const image = el.querySelector("img");
+      const dataIndex = (currentPage - 1) * imagesPerPage + index;
+      if (filteredData[dataIndex]) {
+        image.setAttribute("src", filteredData[dataIndex]?.alamat_url);
+      }
+
+      image.addEventListener("click", () => {
         resizeAll();
         el.classList.toggle("full");
+        // alert("Klik Image Untuk Menghilangkannya");
       });
     });
 
     resizeAll(); // Panggil resizeAll setiap kali halaman berubah
-  }, [currentPage, resizeAll]);
+  }, [currentPage, resizeAll, filteredData]);
 
-  const handleNextPage = () => {
-    const gallery = galleryRef.current;
-    const totalImages = gallery.querySelectorAll(".gallery-item").length;
-    const totalPages = Math.ceil(totalImages / imagesPerPage);
-    if (currentPage < totalPages) {
-      setCurrentPage((prevPage) => prevPage + 1);
-      gallery.scrollTo(0, 0); // Pergi ke posisi awal galeri pada halaman baru
-      resizeAll(); // Panggil resizeAll setelah mengubah halaman
-    }
-  };
-
-  const handlePrevPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage((prevPage) => prevPage - 1);
-      gallery.scrollTo(0, 0); // Pergi ke posisi awal galeri pada halaman baru
-      resizeAll(); // Panggil resizeAll setelah mengubah halaman
-    }
-  };
   return (
     <>
-      <div class="container-sm GridWedding">
+      <div className="container-sm GridWedding">
         <center>
           <li
             className="introone"
@@ -100,114 +109,14 @@ export default function Weddingonly() {
         </center>
         <div className="gallery" id="gallery" ref={galleryRef}>
           {/* Images */}
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9890.jpg" alt="" />
+          {filteredData.map((item, index) => (
+            <div className="gallery-item" key={index}>
+              <div className="content">
+                <img src={item.alamat_url} alt="" />
+              </div>
             </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9884.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding3.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9886.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9904.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9883.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9911.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9887.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9888.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9889.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9908.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding6.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding7.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/wedding10.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9885.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9972.jpg" alt="" />
-            </div>
-          </div>
-          <div className="gallery-item">
-            <div className="content">
-              <img src="./makeup/wedding/IMG_9988.JPG" alt="" />
-            </div>
-          </div>
+          ))}
         </div>
-        {/* <div className="pagination">
-          <button
-            onClick={handlePrevPage}
-            disabled={currentPage === 1}
-            className="previous"
-          >
-            Previous
-          </button>
-          <button
-            className="next"
-            onClick={handleNextPage}
-            disabled={
-              currentPage ===
-              Math.ceil(
-                galleryRef.current?.querySelectorAll(".gallery-item").length /
-                  imagesPerPage
-              )
-            }
-          >
-            Next
-          </button>
-        </div> */}
       </div>
     </>
   );

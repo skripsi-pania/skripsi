@@ -42,7 +42,7 @@ export default function Wedding() {
         type="button"
         onClick={scrollToTop}
         id="myBtn"
-        onclick="topFunction()"
+        // onClick="topFunction()"
         className="arrow_float"
         target="_blank"
         style={{
