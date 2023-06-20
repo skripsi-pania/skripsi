@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState, useCallback } from "react";
 export default function Weddingonly() {
   const galleryRef = useRef(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const imagesPerPage = 8;
+  const imagesPerPage = 200;
   const [filteredData, setFilteredData] = useState([]);
 
   const resizeAll = useCallback(() => {
@@ -107,8 +107,14 @@ export default function Weddingonly() {
             <h1>Wedding</h1>
           </li>
         </center>
+        <p style={{ color: "red", fontSize: "18px", marginLeft: "5px" }}>
+          *Silahkan klik Image untuk menghilangkan popup image itu sendiri,
+          terimakasih.
+        </p>
+
         <div className="gallery" id="gallery" ref={galleryRef}>
           {/* Images */}
+
           {filteredData.map((item, index) => (
             <div className="gallery-item" key={index}>
               <div className="content">
