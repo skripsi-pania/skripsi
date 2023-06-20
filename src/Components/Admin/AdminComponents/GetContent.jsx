@@ -161,7 +161,9 @@ function GetContent() {
                   </label>
                   <br />
                   <br />
-                  <button onClick={handleUpdateClick}>Update</button>
+                  <button onClick={handleUpdateClick} className="update">
+                    Update
+                  </button>
                 </form>
               )}
             </div>

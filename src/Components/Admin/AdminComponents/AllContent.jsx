@@ -89,12 +89,19 @@ function AllContent() {
           <AdminTopbar />
           <div className="crudd">
             <div className="ms-4">
-              <h1 className="text-gray-800">Forum Activity</h1>
+              <h1 className="text-gray-800" style={{ marginTop: "15px" }}>
+                All Content Kategori
+              </h1>
             </div>
 
             <table className="table  table-columns my-table tablee">
               <thead>
                 <tr>
+                  <th
+                    style={{ width: "10px", fontSize: "16px", color: "black" }}
+                  >
+                    No.
+                  </th>
                   <th
                     style={{ width: "100px", fontSize: "16px", color: "black" }}
                   >
@@ -131,6 +138,7 @@ function AllContent() {
               {postingan.map((item, index) => (
                 <tbody key={index}>
                   <tr>
+                    <td>{index + 1}</td>
                     <td>{item._id}</td>
                     <td>{item.title}</td>
                     <td>{item.content}</td>
@@ -142,32 +150,19 @@ function AllContent() {
                     </td>
                     <td>{item.createdAt.substring(0, 10)}</td>
                     <td>{item.updateAt.substring(0, 10)}</td>
-
-                    {/* <td>123</td> */}
                     <td>
                       <a
                         style={{ marginRight: "10px" }}
                         onClick={() => getDataparam(item._id)}
                       >
-                        <i
-                          className="fa fa-edit"
-                          aria-hidden="true"
-                          title="Edit Post"
-                        ></i>
+                        <button className="edit" title="Edit Gallery">
+                          Edit
+                        </button>
                       </a>
-                      {/* <a style={{ marginRight: "10px" }} onClick={handleEdit}>
-                        <i
-                          className="fa fa-edit"
-                          aria-hidden="true"
-                          title="Edit Post"
-                        ></i>
-                      </a> */}
                       <a onClick={() => deleteUser(item._id)}>
-                        <i
-                          className="fa fa-trash"
-                          aria-hidden="true"
-                          title="Delete Post"
-                        ></i>
+                        <button className="hapus" title="Hapus Gallery">
+                          <i className="fa fa-trash" aria-hidden="true"></i>
+                        </button>
                       </a>
                     </td>
                   </tr>

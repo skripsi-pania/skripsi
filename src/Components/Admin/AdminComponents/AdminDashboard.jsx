@@ -382,7 +382,7 @@ function AdminDashboard() {
             <div className="">
               <div className="">
                 <a href="#popup" style={{ textDecoration: "none" }}>
-                  <button>Tambahkan Gallery</button>
+                  <button className="tambah">Tambahkan Gallery</button>
                 </a>
               </div>
             </div>
@@ -396,7 +396,8 @@ function AdminDashboard() {
                 <div className="card-body d-flex flex-row">
                   <div className="contentUpload">
                     {/* ini username jir */}
-                    <h4>Tambah Gallery Image</h4>
+                    <h4 style={{ width: "300px" }}>Tambah Gallery Image</h4>
+                    <br />
                     <br />
                     <input
                       className="form-control"
@@ -471,11 +472,7 @@ function AdminDashboard() {
             ></input> */}
 
                 <center>
-                  <button
-                    className="buttonPost"
-                    type="submit"
-                    onClick={handleBtn2}
-                  >
+                  <button className="post" type="submit" onClick={handleBtn2}>
                     Post
                   </button>
                 </center>
