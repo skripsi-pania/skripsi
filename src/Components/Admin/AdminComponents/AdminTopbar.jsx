@@ -1,17 +1,18 @@
+import axios from "axios";
 import React, { useEffect } from "react";
 
 function AdminTopbar() {
-  const getUsersBE = async () => {
-    axios("https://skripsi-vaniasasikirana.onrender.com/userpage/")
-      .then((res) => {
-        console.log(res.data.data), setPostingan(res.data.data);
-      })
-      .catch((err) => console.log(err));
-  };
-  useEffect(() => {
-    // refreshToken();
-    getUsersBE();
-  }, []);
+  // const getUsersBE = async () => {
+  //   axios("https://skripsi-vaniasasikirana.onrender.com/userpage/")
+  //     .then((res) => {
+  //       console.log(res.data.data), setPostingan(res.data.data);
+  //     })
+  //     .catch((err) => console.log(err));
+  // };
+  // useEffect(() => {
+  //   // refreshToken();
+  //   getUsersBE();
+  // }, []);
   return (
     <>
       <nav className="col navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">

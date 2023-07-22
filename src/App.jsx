@@ -12,6 +12,8 @@ import LoginUtama from "./Components/LogReg/LoginUtama";
 import AdminCrud from "./Components/Admin/AdminCrud";
 import AllContent from "./Components/Admin/AdminComponents/AllContent";
 import GetContent from "./Components/Admin/AdminComponents/GetContent";
+import AdminAccount from "./Components/Admin/AdminComponents/AdminAccount";
+import GetContentAdmin from "./Components/Admin/AdminComponents/GetContentAdmin";
 
 function App() {
   return (
@@ -31,6 +33,11 @@ function App() {
           path="/admin/allcontent/getcontent/:_id"
           element={<GetContent />}
         />
+        <Route
+          path="/admin/account/getakun/:_id"
+          element={<GetContentAdmin />}
+        />
+        <Route path="/admin/account" element={<AdminAccount />} />
       </Routes>
     </div>
   );

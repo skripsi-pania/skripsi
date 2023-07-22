@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import "./addnew.css";
 
 function AdminSideBar() {
   const navigation = useNavigate();
@@ -18,10 +19,7 @@ function AdminSideBar() {
   return (
     <div className="sidebarr">
       {/* <!-- Sidebar --> */}
-      <ul
-        className="navbar-nav  sidebar sidebar-dark accordion"
-        id="accordionSidebar"
-      >
+      <ul className="navbar-nav sidebar sidebar-dark " id="accordionSidebar">
         {/* <!-- Sidebar - Brand --> */}
         <a className="sidebar-brand d-flex align-items-center justify-content-center">
           <div className="sidebar-brand-icon">
@@ -52,6 +50,15 @@ function AdminSideBar() {
           style={{ color: "white", textDecoration: "none", marginTop: "20px" }}
         >
           <h6 class="mx-3">See All Content</h6>
+        </Link>
+        <div className="sidebar-heading">
+          -------------------------------------
+        </div>
+        <Link
+          to="/admin/account"
+          style={{ color: "white", textDecoration: "none", marginTop: "20px" }}
+        >
+          <h6 class="mx-3">Manage Admin Account</h6>
         </Link>
 
         {/* <!-- Divider --> */}
@@ -99,7 +106,7 @@ function AdminSideBar() {
         <hr className="sidebar-divider d-none d-md-block" />
         <hr className="sidebar-divider d-none d-md-block" />
         <hr className="sidebar-divider d-none d-md-block" />
-
+        <div className="gambardashboard"></div>
         {/* <!-- Sidebar Message --> */}
         <div className="sidebar-card d-lg-flex logoutAdmin">
           {/* <img className="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="..."/> */}

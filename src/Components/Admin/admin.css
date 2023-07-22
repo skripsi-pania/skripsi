@@ -12095,7 +12095,19 @@ body.sidebar-toggled footer.sticky-footer {
 
 #accordionSidebar {
   background-color: #ffa5b4;
-  border: solid !important;
+  /* border: solid !important; */
+  height: 500vh !important;
+  /* border-right-color: white !important; */
+}
 
-  border-right-color: white !important;
+.gambardashboard {
+  /* border: ridge; */
+  background: url("../Admin/AdminComponents/LoginBanner.png") !important;
+  height: 100px;
+  position: relative;
+  z-index: 999;
+}
+
+.sidebarr {
+  height: 100px;
 }

@@ -71,7 +71,7 @@ function AllContent() {
         `https://skripsi-vaniasasikirana.onrender.com/userpage/${_id}`
       );
       const data = response.data;
-      // Lakukan apa pun yang perlu Anda lakukan dengan data yang diperoleh
+      // Lakukan apa pun yang perlu dilakukan dengan data yang diperoleh
       console.log("Data pengguna:", data);
       // Navigasi ke halaman baru dengan menggunakan navigate
       navigate(`./getcontent/${_id}`);
