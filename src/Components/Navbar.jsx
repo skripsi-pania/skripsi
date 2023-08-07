@@ -100,7 +100,7 @@ function Navbar() {
                 </Link>
               </li>
               <Link
-                to="/graduation"
+                to="/nonwedding"
                 style={{
                   textDecoration: "none",
                   fontFamily: "Playfair Display",
@@ -109,13 +109,13 @@ function Navbar() {
                 }}
               >
                 <li class="nav-item navawall">
-                  <a class="nav-link " href="#">
-                    Graduation
+                  <a class="nav-link " href="#" style={{ width: "150px" }}>
+                    Non Wedding
                   </a>
                 </li>
               </Link>
             </ul>
-            <ul class="navbar-nav col-6 lore navdua">
+            <ul class="navbar-nav col-5 lore navdua">
               <center>
                 <div class="nav-item loredet loginbutton0">
                   <Link

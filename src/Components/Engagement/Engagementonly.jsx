@@ -178,11 +178,11 @@ export default function Engagementonly() {
               <img src="./makeup/engagement/IMG_0078.jpg" alt="" />
             </div>
           </div>
-          <div className="gallery-item">
+          {/* <div className="gallery-item">
             <div className="content">
               <img src="./makeup/engagement/IMG_0089.jpg" alt="" />
             </div>
-          </div>
+          </div> */}
           <div className="gallery-item">
             <div className="content">
               <img src="./makeup/engagement/IMG_0113.jpg" alt="" />

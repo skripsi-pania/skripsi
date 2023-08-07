@@ -21,30 +21,30 @@ export default function GraduationCover() {
           <h3 style={{ fontSize: "25px", fontWeight: "600" }}>
             Non wedding&emsp;
             <span style={{ color: "red", fontSize: "25px", fontWeight: "600" }}>
-              Mulai 700k
+              Mulai 900k
             </span>
           </h3>
-          <p style={{ paddingLeft: "20px", fontSize: "18px" }}>- Graduation</p>
-          <p style={{ paddingLeft: "20px", fontSize: "18px" }}>- Bridesmaid</p>
-          <p style={{ paddingLeft: "20px", fontSize: "18px" }}>
+          <p style={{ paddingLeft: "20px", fontSize: "24px" }}>- Graduation</p>
+          <p style={{ paddingLeft: "20px", fontSize: "24px" }}>- Bridesmaid</p>
+          <p style={{ paddingLeft: "20px", fontSize: "24px" }}>
             - Party
             {/* <span style={{ color: "red" }}>Rp. 1.500.000</span> */}
           </p>
-          <p style={{ paddingLeft: "20px", fontSize: "18px" }}>
+          <p style={{ paddingLeft: "20px", fontSize: "24px" }}>
             - Photoshoot
             {/* <span style={{ color: "red" }}> Rp. 2.000.000</span> */}
           </p>
-          <p style={{ paddingLeft: "20px", fontSize: "18px" }}>
+          <p style={{ paddingLeft: "20px", fontSize: "24px" }}>
             - Maternity
             {/* <span style={{ color: "red" }}> Rp. 2.000.000</span> */}
           </p>
-          <p style={{ paddingLeft: "20px", fontSize: "18px" }}>
+          <p style={{ paddingLeft: "20px", fontSize: "24px" }}>
             - Pengajian/ Siraman{" "}
             {/* <span style={{ color: "red" }}> Rp. 2.000.000</span> */}
           </p>
 
           <h4
-            style={{ fontSize: "15px", fontWeight: "600", paddingLeft: "20px" }}
+            style={{ fontSize: "20px", fontWeight: "600", paddingLeft: "20px" }}
           >
             Exclude Transport
           </h4>

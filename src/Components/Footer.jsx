@@ -128,7 +128,7 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
-            <div
+            {/* <div
               class="col-3"
               style={{ marginTop: "10px", borderRadius: "25px" }}
             >
@@ -141,7 +141,7 @@ export default function Footer() {
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

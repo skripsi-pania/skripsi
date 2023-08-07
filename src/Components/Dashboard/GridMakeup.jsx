@@ -46,9 +46,9 @@ function GridMakeup() {
           </div>
           <div class="col-3 cardGrid cardGridGrad grad0">
             <div className="catGrid grad1">
-              <p>Graduation</p>
+              <p>Non Wedding</p>
               <center>
-                <Link to="/graduation">
+                <Link to="/nonwedding">
                   <button> Click me!</button>
                 </Link>
               </center>

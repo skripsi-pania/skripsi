@@ -22,7 +22,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/wedding" element={<Wedding />} />
         <Route path="/engagement" element={<Engagement />} />
-        <Route path="/graduation" element={<Graduation />} />
+        <Route path="/nonwedding" element={<Graduation />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/privateclass" element={<PrivateClass />} />
         <Route path="/admin-login" element={<LoginUtama />} />

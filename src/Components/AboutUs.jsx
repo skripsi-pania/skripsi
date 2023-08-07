@@ -7,7 +7,7 @@ export default function AboutUs() {
   return (
     <>
       <Navbar />
-      <div class="container text-center">
+      <div class="container-fluid text-center">
         <div class="row align-items-start">
           <div class="col-5">
             <img
@@ -17,7 +17,10 @@ export default function AboutUs() {
               width={425}
             />
           </div>
-          <div class="container-fluid col row" style={{ marginTop: "20px" }}>
+          <div
+            class="container-fluid col row"
+            style={{ marginTop: "20px", marginLeft: "-80px" }}
+          >
             <center>
               <li
                 className="introone"
@@ -30,15 +33,22 @@ export default function AboutUs() {
                 <h1>About Us</h1>
               </li>
             </center>
-            <div class="col-6">
+            <div class="col-5">
               <img
                 src="./IMG_0115.jpg"
                 className="coverku0"
-                style={{ marginLeft: "-13px", borderRadius: "35px" }}
+                style={{ borderRadius: "35px" }}
                 width={275}
               />
             </div>
-            <div class="col-5" style={{ marginTop: "-5px" }}>
+            <div
+              class="col-6"
+              style={{
+                marginTop: "-5px",
+                marginBottom: "5px",
+                fontSize: "20px",
+              }}
+            >
               Rins adalah seorang makeup artist yang berbakat dan terkenal asal
               Indonesia. Dikenal karena keterampilannya dalam menciptakan
               tampilan riasan yang cantik dan menawan, Rins telah memperoleh
@@ -49,11 +59,12 @@ export default function AboutUs() {
             </div>
 
             <div
-              class="col-5"
+              class="col-6"
               style={{
-                paddingTop: "20px",
+                paddingTop: "40px",
                 // border: "ridge",
-                paddingLeft: "70px",
+                paddingLeft: "5px",
+                fontSize: "20px",
               }}
             >
               Rins juga dikenal karena menggunakan produk-produk berkualitas
@@ -62,7 +73,7 @@ export default function AboutUs() {
               senantiasa mengembangkan keterampilannya melalui pelatihan dan
               pengalaman.
             </div>
-            <div class="col-7" style={{}}>
+            <div class="col-5" style={{}}>
               <center>
                 <img
                   src="./IMG_0129.jpg"

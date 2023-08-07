@@ -79,7 +79,7 @@ export default function Graduationonly() {
               marginBottom: "80px",
             }}
           >
-            <h1>Graduation</h1>
+            <h1>Non Wedding</h1>
           </li>
         </center>
         <div className="gallery" id="gallery" ref={galleryRef}>
