@@ -253,7 +253,7 @@ function AdminDashboard() {
                       padding: "30px",
                     }}
                   >
-                    <h4 className="text-center">Add New Account Admin</h4>
+                    <h4 className="text-center">Tambah Akun Admin</h4>
                     <br />
                     <div className="col">
                       <label className="form-label">Username</label>
@@ -353,7 +353,7 @@ function AdminDashboard() {
             style={{ height: "10rem", marginLeft: "50px" }}
           >
             <div className="card-body">
-              <h5 className="card-title">Total Pengguna Akun</h5>
+              <h5 className="card-title">Total Akun Admin</h5>
               <hr />
               {/* <p
                 className="card-subtitle mb-2 text-muted"
@@ -369,7 +369,7 @@ function AdminDashboard() {
             style={{ height: "10rem", marginLeft: "50px" }}
           >
             <div className="card-body">
-              <h5 className="card-title">Total Content Semua Kategori</h5>
+              <h5 className="card-title">Total Gallery Semua Kategori</h5>
               <hr />
 
               <p className="card-text">{totalSumcon} </p>
@@ -424,7 +424,7 @@ function AdminDashboard() {
                   className="form-control"
                   id="exampleFormControlTextarea1"
                   rows="1"
-                  placeholder="judul file"
+                  placeholder="title of gallery"
                   value={title}
                   htmlFor="title"
                   onChange={handleTitle}
@@ -490,7 +490,7 @@ function AdminDashboard() {
             style={{ height: "10rem", marginLeft: "50px" }}
           >
             <div className="card-body">
-              <h5 className="card-title">Total Kategori Wedding</h5>
+              <h5 className="card-title">Total Gallery Kategori Wedding</h5>
               <hr />
               {/* <p
                 className="card-subtitle mb-2 text-muted"
@@ -506,7 +506,7 @@ function AdminDashboard() {
             style={{ height: "10rem", marginLeft: "50px", marginTop: "8px" }}
           >
             <div className="card-body">
-              <h5 className="card-title">Total Kategori Engagement</h5>
+              <h5 className="card-title">Total Gallery Kategori Engagement</h5>
               <hr />
 
               <p className="card-text">{totalSumEng} </p>
@@ -524,7 +524,7 @@ function AdminDashboard() {
             style={{ height: "10rem", marginLeft: "50px" }}
           >
             <div className="card-body">
-              <h5 className="card-title">Total Kategori Graduation</h5>
+              <h5 className="card-title">Total Gallery Kategori Non-Wedding</h5>
               <hr />
               <p className="card-text">{totalSumGra} </p>
             </div>

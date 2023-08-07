@@ -90,7 +90,7 @@ function AllContent() {
           <div className="crudd">
             <div className="ms-4">
               <h1 className="text-gray-800" style={{ marginTop: "15px" }}>
-                All Content Kategori
+                Semua Data Gallery Kategori
               </h1>
             </div>
 

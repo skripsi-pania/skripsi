@@ -49,7 +49,7 @@ function AdminSideBar() {
           to="/admin/allcontent"
           style={{ color: "white", textDecoration: "none", marginTop: "20px" }}
         >
-          <h6 class="mx-3">See All Content</h6>
+          <h6 class="mx-3">Manage Gallery</h6>
         </Link>
         <div className="sidebar-heading">
           -------------------------------------

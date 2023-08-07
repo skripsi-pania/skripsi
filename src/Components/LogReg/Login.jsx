@@ -171,12 +171,12 @@ const Login = () => {
                         Submit
                       </button>
                     </Link>
-                    <Link
+                    {/* <Link
                       to={"/register"}
                       style={{ textAlign: "left", textDecoration: "none" }}
                     >
                       Belum punya akun?
-                    </Link>
+                    </Link> */}
                   </div>
                 </form>
               </div>
